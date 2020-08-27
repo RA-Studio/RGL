@@ -1,19 +1,28 @@
 :root {
 	// Размеры
-	--content-max-weight: 1360px;
-	--grid-columns-number: 12;
-	--grid-columns-weight: 95px;
+	--content-max-weight: 1312px;
 }
 
 // Цвета
-$color-text-main: #000;
-$color-grey: #fafafa;
-$color-white: #fff;
-$color-active: #0060a0;
-$color-active-05: rgba(62, 178, 255, 0.05);
-$color-active-light: rgba(0, 96, 160, 0.5);
-$color-hover: #0076c4;
-$color-25: rgba(0, 0, 0, 0.25);
+$color-text-main: #102A43;
+$color-wheat: #ffffff;
+$color-blue_neut: #F8F9FB;
+$color-light_viol: #D9E2EC;
+$color-50: rgba(16, 42, 67, 0.5);
+$color-neutral: #617D97;
+$color-green_orig: #1C4932;
+
+// Шрифты
+$font-Montserrat: 'Montserrat',
+sans-serif;
+$font-Raleway: 'Raleway',
+sans-serif;
+
+// Анимация
+@mixin transition($property:all) {
+	transition: 250ms ease-in-out 0ms;
+	transition-property: $property;
+}
 
 @import "./common/fonts.scss";
 @import "./common/tiny-slider.scss";
@@ -28,21 +37,118 @@ body {
 	margin: 0;
 	padding: 0;
 	color: $color-text-main;
-	font-family: "Montserrat", serif;
+	font-family: $font-Montserrat;
 	font-size: 16px;
+	line-height: 24px;
 	font-weight: normal;
 	font-style: normal;
-	line-height: 150%;
+	background-image: url(../images/back-img.svg);
+	background-color: $color-blue_neut;
+	background-repeat: repeat-y;
+	background-position-x: center;
+}
+
+a {
+	@include transition(color);
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+// inputs
+.input {
+	height: 40px;
+	background-color: $color-blue_neut;
+	border: 1px solid $color-light_viol;
+	border-radius: 5px;
+	font-family: $font-Montserrat;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: $color-text-main;
+	padding: 0 16px;
+	overflow: hidden;
+	@include transition(border-color);
+
+
+	&:focus {
+		border-color: $color-neutral;
+	}
+
+	&::placeholder {
+		color: $color-50;
+	}
+}
+
+.input_icon {
+	display: flex;
+	flex-direction: row-reverse;
+
+	.input {
+		display: block;
+		border-radius: 0 5px 5px 0;
+		border-left: none;
+		z-index: 2;
+		flex-basis: 100%;
+
+		&:focus~label {
+			border-color: $color-neutral;
+		}
+	}
+
+	>label {
+		width: 40px;
+		height: 40px;
+		border-radius: 5px 0 0 5px;
+		border: 1px solid $color-light_viol;
+		border-right: none;
+		background-color: $color-wheat;
+		background-position: center;
+		background-repeat: no-repeat;
+		z-index: 1;
+		flex-shrink: 0;
+	}
+}
+
+.input_icon-doc {
+	background-image: url(../images/icons/icon-doc-min.svg);
+}
+
+.input_icon-search {
+	background-image: url(../images/icons/icon-search-min.svg);
+}
+
+// button
+.button {
+	height: 40px;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0 24px;
+	background-color: $color-green_orig;
+	color: $color-wheat;
+	font-family: $font-Montserrat;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	border: none;
+	cursor: pointer;
+	@include transition(background-color);
+
+	&:hover {
+		background-color: lighten($color-green_orig, 5);
+	}
+}
+
+.button_arrow {
+	padding: 0 20px;
+	background-image: url(../images/icons/icon-arrow-min.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 
-// Гриды
-.main-grid {
-	display: grid;
-	grid-template-columns: repeat(var(--grid-columns-number), var(--grid-columns-weight));
-	grid-column-gap: 20px;
-	justify-content: center;
-}
-
-
-// @import "./common/header.scss";
+@import "./common/header.scss";
