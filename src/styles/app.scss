@@ -1,0 +1,49 @@
+:root {
+	// Размеры
+	--content-max-weight: 1360px;
+	--grid-columns-number: 12;
+	--grid-columns-weight: 95px;
+}
+
+// Цвета
+$color-text-main: #000;
+$color-grey: #fafafa;
+$color-white: #fff;
+$color-active: #0060a0;
+$color-active-05: rgba(62, 178, 255, 0.05);
+$color-active-light: rgba(0, 96, 160, 0.5);
+$color-hover: #0076c4;
+$color-25: rgba(0, 0, 0, 0.25);
+
+@import "./common/fonts.scss";
+@import "./common/tiny-slider.scss";
+
+* {
+	box-sizing: border-box;
+	outline-offset: 2px;
+}
+
+body {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	color: $color-text-main;
+	font-family: "Spectral", serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 150%;
+}
+
+
+// Гриды
+.main-grid {
+	display: grid;
+	grid-template-columns: repeat(var(--grid-columns-number), var(--grid-columns-weight));
+	grid-column-gap: 20px;
+	justify-content: center;
+}
+
+
+// @import "./common/header.scss";
+
