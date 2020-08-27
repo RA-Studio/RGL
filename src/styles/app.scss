@@ -11,6 +11,8 @@ $color-light_viol: #D9E2EC;
 $color-50: rgba(16, 42, 67, 0.5);
 $color-neutral: #617D97;
 $color-green_orig: #1C4932;
+$color-supporting_yellow: #F8E3A3;
+$color-shitty: #DAB588;
 
 // Шрифты
 $font-Montserrat: 'Montserrat',
@@ -52,11 +54,20 @@ a {
 	@include transition(color);
 }
 
-.header {
+.header,
+main {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.heading-1,
+h1 {
+	font-family: $font-Raleway;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 48px;
 }
 
 // inputs
@@ -152,3 +163,5 @@ a {
 
 
 @import "./common/header.scss";
+
+@import "./pages/index/slider-main.scss";

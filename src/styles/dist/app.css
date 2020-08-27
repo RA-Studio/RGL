@@ -226,11 +226,20 @@ a {
   transition-property: color;
 }
 
-.header {
+.header,
+main {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.heading-1,
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
 }
 
 .input {
@@ -410,4 +419,38 @@ a {
 .main-manu__linc:hover {
   color: #1C4932;
   text-decoration: underline;
+}
+
+.slider-main__wrap {
+  width: var(--content-max-weight);
+  margin-top: 80px;
+  margin-bottom: 72px;
+}
+
+.slider-main__item {
+  position: relative;
+}
+
+.slider-main__text-wrap {
+  position: absolute;
+  top: 60px;
+  left: 113px;
+  width: 500px;
+}
+
+.slider-main__text-label {
+  display: block;
+  color: #F8E3A3;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.slider-main__text {
+  color: #ffffff;
+}
+
+.slider-main__img {
+  border-radius: 5px;
 }

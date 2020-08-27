@@ -52,16 +52,15 @@ document.querySelectorAll(".phone-mask").forEach(function (item) {
   });
 }); // Слайдер https://www.npmjs.com/package/tiny-slider
 
-if (document.querySelector(".injury__slider")) {
+if (document.querySelector(".slider-main")) {
   var injury = tns({
-    container: ".injury__slider",
-    items: 2,
-    autoWidth: true,
+    container: ".slider-main",
+    items: 1,
     gutter: 20,
     mouseDrag: true,
-    loop: false,
-    speed: 300,
+    // loop: false,
+    speed: 400,
     controls: false,
-    nav: false
+    navPosition: "bottom"
   });
 }
