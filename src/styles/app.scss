@@ -10,6 +10,7 @@ $color-blue_neut: #F8F9FB;
 $color-light_viol: #D9E2EC;
 $color-50: rgba(16, 42, 67, 0.5);
 $color-neutral: #617D97;
+$color-sky: #186EAF;
 $color-green_orig: #1C4932;
 $color-supporting_yellow: #F8E3A3;
 $color-shitty: #DAB588;
@@ -39,15 +40,15 @@ body {
 	margin: 0;
 	padding: 0;
 	color: $color-text-main;
-	font-family: $font-Montserrat;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: normal;
-	font-style: normal;
-	background-image: url(../images/back-img.svg);
 	background-color: $color-blue_neut;
+	background-image: url(../images/back-img.svg);
 	background-repeat: repeat-y;
 	background-position-x: center;
+	font-family: $font-Montserrat;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 24px;
 }
 
 a {
@@ -56,33 +57,33 @@ a {
 
 .header,
 main {
-	width: 100%;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	align-items: center;
 }
 
 .heading-1,
 h1 {
 	font-family: $font-Raleway;
-	font-weight: 600;
 	font-size: 40px;
+	font-weight: 600;
 	line-height: 48px;
 }
 
 // inputs
 .input {
+	overflow: hidden;
 	height: 40px;
-	background-color: $color-blue_neut;
+	padding: 0 16px;
+	color: $color-text-main;
 	border: 1px solid $color-light_viol;
 	border-radius: 5px;
+	background-color: $color-blue_neut;
 	font-family: $font-Montserrat;
-	font-weight: 500;
 	font-size: 14px;
+	font-weight: 500;
 	line-height: 16px;
-	color: $color-text-main;
-	padding: 0 16px;
-	overflow: hidden;
 	@include transition(border-color);
 
 
@@ -100,10 +101,10 @@ h1 {
 	flex-direction: row-reverse;
 
 	.input {
-		display: block;
-		border-radius: 0 5px 5px 0;
-		border-left: none;
 		z-index: 2;
+		display: block;
+		border-left: none;
+		border-radius: 0 5px 5px 0;
 		flex-basis: 100%;
 
 		&:focus~label {
@@ -112,15 +113,15 @@ h1 {
 	}
 
 	>label {
+		z-index: 1;
 		width: 40px;
 		height: 40px;
-		border-radius: 5px 0 0 5px;
 		border: 1px solid $color-light_viol;
 		border-right: none;
+		border-radius: 5px 0 0 5px;
 		background-color: $color-wheat;
-		background-position: center;
 		background-repeat: no-repeat;
-		z-index: 1;
+		background-position: center;
 		flex-shrink: 0;
 	}
 }
@@ -136,17 +137,17 @@ h1 {
 // button
 .button {
 	height: 40px;
-	border-radius: 5px;
 	margin: 0;
 	padding: 0 24px;
-	background-color: $color-green_orig;
-	color: $color-wheat;
-	font-family: $font-Montserrat;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 16px;
-	border: none;
 	cursor: pointer;
+	color: $color-wheat;
+	border: none;
+	border-radius: 5px;
+	background-color: $color-green_orig;
+	font-family: $font-Montserrat;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
 	@include transition(background-color);
 
 	&:hover {
@@ -165,3 +166,5 @@ h1 {
 @import "./common/header.scss";
 
 @import "./pages/index/slider-main.scss";
+@import "./pages/index/lab-rgl.scss";
+@import "./common/card-linc.scss";

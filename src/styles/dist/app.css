@@ -210,15 +210,15 @@ body {
   margin: 0;
   padding: 0;
   color: #102A43;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-  font-style: normal;
-  background-image: url(../images/back-img.svg);
   background-color: #F8F9FB;
+  background-image: url(../images/back-img.svg);
   background-repeat: repeat-y;
   background-position-x: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
 }
 
 a {
@@ -228,32 +228,32 @@ a {
 
 .header,
 main {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
 }
 
 .heading-1,
 h1 {
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
   font-size: 40px;
+  font-weight: 600;
   line-height: 48px;
 }
 
 .input {
+  overflow: hidden;
   height: 40px;
-  background-color: #F8F9FB;
+  padding: 0 16px;
+  color: #102A43;
   border: 1px solid #D9E2EC;
   border-radius: 5px;
+  background-color: #F8F9FB;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 16px;
-  color: #102A43;
-  padding: 0 16px;
-  overflow: hidden;
   transition: 250ms ease-in-out 0ms;
   transition-property: border-color;
 }
@@ -269,25 +269,25 @@ h1 {
   flex-direction: row-reverse;
 }
 .input_icon .input {
-  display: block;
-  border-radius: 0 5px 5px 0;
-  border-left: none;
   z-index: 2;
+  display: block;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
   flex-basis: 100%;
 }
 .input_icon .input:focus ~ label {
   border-color: #617D97;
 }
 .input_icon > label {
+  z-index: 1;
   width: 40px;
   height: 40px;
-  border-radius: 5px 0 0 5px;
   border: 1px solid #D9E2EC;
   border-right: none;
+  border-radius: 5px 0 0 5px;
   background-color: #ffffff;
-  background-position: center;
   background-repeat: no-repeat;
-  z-index: 1;
+  background-position: center;
   flex-shrink: 0;
 }
 
@@ -301,17 +301,17 @@ h1 {
 
 .button {
   height: 40px;
-  border-radius: 5px;
   margin: 0;
   padding: 0 24px;
-  background-color: #1C4932;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  border: none;
   cursor: pointer;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background-color: #1C4932;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
   transition: 250ms ease-in-out 0ms;
   transition-property: background-color;
 }
@@ -425,10 +425,12 @@ h1 {
   width: var(--content-max-weight);
   margin-top: 80px;
   margin-bottom: 72px;
+  position: relative;
 }
 
 .slider-main__item {
   position: relative;
+  margin-bottom: -7px;
 }
 
 .slider-main__text-wrap {
@@ -453,4 +455,92 @@ h1 {
 
 .slider-main__img {
   border-radius: 5px;
+}
+
+.slider-main__wrap .tns-nav {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+}
+.slider-main__wrap .tns-nav button {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-right: 8px;
+  background-color: #DAB588;
+}
+.slider-main__wrap .tns-nav button:last-child {
+  margin-right: 0;
+}
+.slider-main__wrap .tns-nav .tns-nav-active {
+  background-color: #F8E3A3;
+}
+
+.lab-rgl {
+  width: var(--content-max-weight);
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lab-rgl__heading {
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+.lab-rgl__text {
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.lab-rgl__servic-wrap {
+  width: 100%;
+}
+
+.card-linc {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.card-linc__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #102A43;
+  width: 340px;
+  padding: 16px 24px;
+  border-radius: 5px;
+  border: 1px solid #D9E2EC;
+  text-decoration: none;
+  transition: 250ms ease-in-out 0ms;
+  transition-property: box-shadow;
+}
+.card-linc__item:hover {
+  box-shadow: 0px 1px 10px rgba(16, 42, 67, 0.15);
+}
+
+.card-linc__img {
+  margin-bottom: 16px;
+}
+
+.card-linc__heading {
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #186EAF;
+  margin: 0 0 8px 0;
+}
+
+.card-linc__text {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 0 8px 0;
 }
