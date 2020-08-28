@@ -83,14 +83,12 @@
 }
 
 .main-manu__linc {
-    text-decoration: none;
     color: $color-text-main;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
 
     &:hover {
-        text-decoration: underline;
         color: $color-green_orig;
     }
 }

@@ -1,41 +1,41 @@
 .card-linc {
-    display: flex;
-    margin-bottom: 40px;
-    justify-content: space-around;
+	display: flex;
+	margin-bottom: 40px;
+	justify-content: space-around;
 }
 
 .card-linc__item {
-    display: flex;
-    flex-direction: column;
-    width: 340px;
-    padding: 16px 24px;
-    text-decoration: none;
-    color: $color-text-main;
-    border: 1px solid $color-light_viol;
-    border-radius: 5px;
-    background-color: $color-wheat;
-    @include transition(box-shadow);
+	display: flex;
+	flex-direction: column;
+	width: 340px;
+	padding: 16px 24px;
+	color: $color-text-main;
+	border: 1px solid $color-light_viol;
+	border-radius: 5px;
+	background-color: $color-wheat;
+	@include transition(box-shadow);
 
-    &:hover {
-        box-shadow: 0px 1px 10px rgba(16, 42, 67, 0.15);
-    }
+	&:hover {
+		text-decoration: none;
+		box-shadow: 0px 1px 10px rgba(16, 42, 67, 0.15);
+	}
 }
 
 .card-linc__img {
-    margin-bottom: 16px;
+	margin-bottom: 16px;
 }
 
 .card-linc__heading {
-    width: 100%;
-    margin: 0 0 8px 0;
-    color: $color-sky;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
+	width: 100%;
+	margin: 0 0 8px 0;
+	color: $color-sky;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
 }
 
 .card-linc__text {
-    margin: 0 0 8px 0;
-    font-size: 14px;
-    line-height: 16px;
+	margin: 0 0 8px 0;
+	font-size: 14px;
+	line-height: 16px;
 }

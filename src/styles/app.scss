@@ -52,10 +52,16 @@ body {
 }
 
 a {
+	text-decoration: none;
 	@include transition(color);
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .header,
+.footer,
 main {
 	display: flex;
 	flex-direction: column;
@@ -168,3 +174,5 @@ h1 {
 @import "./pages/index/slider-main.scss";
 @import "./pages/index/lab-rgl.scss";
 @import "./common/card-linc.scss";
+
+@import "./common/footer.scss";
