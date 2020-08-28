@@ -75,6 +75,11 @@ h1 {
 	line-height: 48px;
 }
 
+// миксы
+.text_center {
+	text-align: center;
+}
+
 // inputs
 .input {
 	overflow: hidden;
@@ -171,5 +176,6 @@ h1 {
 @import "./pages/index/lab-rgl.scss";
 @import "./common/card-linc.scss";
 @import "./pages/index/advantages.scss";
+@import "./pages/index/certificates.scss";
 
 @import "./common/footer.scss";

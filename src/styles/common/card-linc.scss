@@ -13,6 +13,7 @@
 	border: 1px solid $color-light_viol;
 	border-radius: 5px;
 	background-color: $color-wheat;
+	align-items: center;
 	@include transition(box-shadow);
 
 	&:hover {
