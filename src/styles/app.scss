@@ -4,25 +4,23 @@
 }
 
 // Цвета
-$color-text-main: #102A43;
+$color-text-main: #102a43;
 $color-wheat: #ffffff;
-$color-blue_neut: #F8F9FB;
-$color-light_viol: #D9E2EC;
+$color-blue_neut: #f8f9fb;
+$color-light_viol: #d9e2ec;
 $color-50: rgba(16, 42, 67, 0.5);
-$color-neutral: #617D97;
-$color-sky: #186EAF;
-$color-green_orig: #1C4932;
-$color-supporting_yellow: #F8E3A3;
-$color-shitty: #DAB588;
+$color-neutral: #617d97;
+$color-sky: #186eaf;
+$color-green_orig: #1c4932;
+$color-supporting_yellow: #f8e3a3;
+$color-shitty: #dab588;
 
 // Шрифты
-$font-Montserrat: 'Montserrat',
-sans-serif;
-$font-Raleway: 'Raleway',
-sans-serif;
+$font-Montserrat: "Montserrat", sans-serif;
+$font-Raleway: "Raleway", sans-serif;
 
 // Анимация
-@mixin transition($property:all) {
+@mixin transition($property: all) {
 	transition: 250ms ease-in-out 0ms;
 	transition-property: $property;
 }
@@ -92,7 +90,6 @@ h1 {
 	line-height: 16px;
 	@include transition(border-color);
 
-
 	&:focus {
 		border-color: $color-neutral;
 	}
@@ -113,12 +110,12 @@ h1 {
 		border-radius: 0 5px 5px 0;
 		flex-basis: 100%;
 
-		&:focus~label {
+		&:focus ~ label {
 			border-color: $color-neutral;
 		}
 	}
 
-	>label {
+	> label {
 		z-index: 1;
 		width: 40px;
 		height: 40px;
@@ -168,11 +165,11 @@ h1 {
 	background-position: center;
 }
 
-
 @import "./common/header.scss";
 
 @import "./pages/index/slider-main.scss";
 @import "./pages/index/lab-rgl.scss";
 @import "./common/card-linc.scss";
+@import "./pages/index/advantages.scss";
 
 @import "./common/footer.scss";
