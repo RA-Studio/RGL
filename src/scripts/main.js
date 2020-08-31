@@ -85,3 +85,19 @@ if (document.querySelector(".other-public__slider")) {
 		navPosition: "bottom",
 	});
 }
+
+if (document.querySelector(".gem-wiki__slider")) {
+	var injury = tns({
+		container: ".gem-wiki__slider",
+		items: 3,
+		gutter: 32,
+		mouseDrag: true,
+		autoWidth: true,
+		loop: false,
+		speed: 250,
+		controls: false,
+		// controlsText: ["", ""],
+		nav: false,
+		// navPosition: "bottom",
+	});
+}
