@@ -8,6 +8,7 @@ $color-text-main: #102a43;
 $color-wheat: #ffffff;
 $color-blue_neut: #f8f9fb;
 $color-light_viol: #d9e2ec;
+$color-lght_green: #f1f9f6;
 $color-50: rgba(16, 42, 67, 0.5);
 $color-neutral: #617d97;
 $color-sky: #186eaf;
@@ -144,6 +145,7 @@ h1 {
 
 // button
 .button {
+	display: inline-flex;
 	height: 40px;
 	margin: 0;
 	padding: 0 24px;
@@ -156,9 +158,11 @@ h1 {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16px;
+	align-items: center;
 	@include transition(background-color);
 
 	&:hover {
+		text-decoration: none;
 		background-color: lighten($color-green_orig, 5);
 	}
 }
@@ -170,6 +174,48 @@ h1 {
 	background-position: center;
 }
 
+// Слайдер
+.tns-controls {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	right: 0;
+	left: 0;
+	display: flex;
+	padding: 0 44px;
+	transform: translateY(-50%);
+	justify-content: space-between;
+
+	> button {
+		height: 40px;
+		padding: 0 11px;
+		text-align: center;
+		border: none;
+		border-radius: 5px;
+		background-color: $color-lght_green;
+		box-shadow: 0px 1px 10px rgba(16, 42, 67, 0.15);
+		@include transition("visibility, opacity");
+
+		&:disabled {
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		&::after {
+			display: block;
+			width: 18px;
+			height: 12px;
+			content: "";
+			background-color: $color-green_orig;
+			mask: url(../images/icons/icon-arrow-min.svg);
+		}
+	}
+
+	> button[data-controls="prev"]::after {
+		transform: rotate(180deg);
+	}
+}
+
 @import "./common/header.scss";
 
 @import "./pages/index/slider-main.scss";
@@ -177,5 +223,6 @@ h1 {
 @import "./common/card-linc.scss";
 @import "./pages/index/advantages.scss";
 @import "./pages/index/certificates.scss";
+@import "./pages/index/other-public.scss";
 
 @import "./common/footer.scss";

@@ -69,3 +69,19 @@ if (document.querySelector(".slider-main")) {
 		navPosition: "bottom",
 	});
 }
+
+if (document.querySelector(".other-public__slider")) {
+	var injury = tns({
+		container: ".other-public__slider",
+		items: 2,
+		gutter: 64,
+		mouseDrag: true,
+		autoWidth: true,
+		loop: false,
+		speed: 300,
+		// controls: false,
+		controlsText: ["", ""],
+		nav: false,
+		navPosition: "bottom",
+	});
+}
