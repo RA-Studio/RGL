@@ -1,0 +1,42 @@
+.bread-crumbs {
+	margin-top: 64px;
+}
+
+.bread-crumbs__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bread-crumbs__item {
+	display: flex;
+	margin-right: 14px;
+	align-items: center;
+
+	&:last-child {
+		margin-right: 0;
+
+		&::after {
+			content: none;
+		}
+	}
+
+	&::after {
+		width: 6px;
+		height: 10px;
+		margin-left: 14px;
+		content: "";
+		background: url(../images/icons/icon-angle-min.svg) no-repeat center;
+	}
+}
+
+.bread-crumbs__limc,
+.bread-crumbs__location {
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.bread-crumbs__limc {
+	color: $color-neutral;
+}
