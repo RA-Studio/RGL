@@ -31,7 +31,7 @@ $font-Raleway: "Raleway", sans-serif;
 
 * {
 	box-sizing: border-box;
-	outline-offset: 2px;
+	outline-offset: 4px;
 }
 
 body {
@@ -61,6 +61,7 @@ a {
 
 .header,
 .footer,
+.contact,
 main {
 	display: flex;
 	flex-direction: column;
@@ -150,6 +151,7 @@ h1 {
 	margin: 0;
 	padding: 0 24px;
 	cursor: pointer;
+	text-align: center;
 	color: $color-wheat;
 	border: none;
 	border-radius: 5px;
@@ -159,6 +161,7 @@ h1 {
 	font-weight: 500;
 	line-height: 16px;
 	align-items: center;
+	justify-content: center;
 	@include transition(background-color);
 
 	&:hover {
@@ -226,4 +229,5 @@ h1 {
 @import "./pages/index/other-public.scss";
 @import "./pages/index/gem-wiki.scss";
 
+@import "./common/contact.scss";
 @import "./common/footer.scss";

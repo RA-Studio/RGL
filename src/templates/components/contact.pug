@@ -1,0 +1,29 @@
+section.contact
+    .contact_wrap
+        .contact__form-wrap
+            h2.heading-1.contact__heading Связаться с нами
+            p.contact__text Если у вас есть вопросы, заполните форму, и мы вам перезвоним в ближайшее время
+            form(action="").contact__form
+                label.contact__input-wrap Ваше имя 
+                    span *
+                    input(type="text", name="userName" placeholder="Ваше имя" required)#userName.contact__input
+                label.contact__input-wrap Телефон 
+                    span *
+                    input(type="tel", name="userPhone" placeholder="Телефон" min="1" required)#userPhone.contact__input.phone-mask
+                label.contact__input-wrap Сообщение
+                    textarea(type="textarea", name="message" placeholder="Сообщение")#message.contact__input.contact__input_area
+
+                button(type="submit").button.contact__button Перезвоните мне
+                p.contact__text-conf Нажимая на кнопку, вы соглашаетесь с 
+                    a(href="#") политикой конфиденциальности сайта
+
+        .contact__map-wrap
+            .contact__map
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8757dd87a4819217f7069219d3da16e094a5da6ad90b4a634a1a949107f7a2f0&amp;width=720&amp;height=448&amp;lang=ru_RU&amp;scroll=false"></script>
+            .contact__adres-wrap
+                a(href="#").contact__adres-item Москва, ул. Нагатинская, д. 5
+                    img(src="./assets/images/icons/icon-point-min.svg", alt="").contact__adres-item-icon
+                span.contact__adres-item Пн–пт с 10:00 до 20:00
+                    img(src="./assets/images/icons/icon-time-min.svg", alt="").contact__adres-item-icon
+                a(href="tel:+74952314512").contact__adres-item +7 495 231 45 12
+                    img(src="./assets/images/icons/icon-pone-min.svg", alt="").contact__adres-item-icon

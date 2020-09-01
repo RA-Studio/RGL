@@ -2,9 +2,11 @@ extends ../template
 
 block variables
     - var title = 'Главная'
+    - var contactForm = true
 
 block content
     main
+        //- Слайдер
         section.slider-main__wrap
             .slider-main
                 .slider-main__item
@@ -23,6 +25,7 @@ block content
                         span.heading-1.slider-main__text Скидка 10% на сертификацию бриллианта
                     img(src="./assets/images/slider-img1-min.jpg", alt="Скидка 10% на сертификацию бриллианта").slider-main__img
 
+        //- Геммологическая лаборатория RGL
         section.lab-rgl
             h1.heading-1.lab-rgl__heading Геммологическая лаборатория RGL
             p.lab-rgl__text Cертифицируем бриллианты, различные драгоценные камни и ювелирные <br> изделий в российской и международной системах
@@ -42,6 +45,7 @@ block content
             
             a(href="#").button.header__top-button Услуги и цены
 
+        //- Преимущества работы с нами
         section.advantages
             h2.heading-1.advantages__heading Преимущества работы с нами
             .advantages__wrap
@@ -62,6 +66,7 @@ block content
                     p.advantages__item-text Лояльные цены за качественную и быструю работу
             a(href="#").button.header__top-button Услуги и цены
         
+        //- Виды сертификации
         section.certificates
             h2.heading-1.certificates__heading Виды сертификации
             .card-linc
@@ -75,6 +80,7 @@ block content
                     img(src="./assets/images/cert-mineral-min.png", srcset="assets/images/cert-mineral@2x-min.png 2x" alt="Виды сертификации на драгоценные камни").card-linc__img
                     h4.card-linc__heading.text_center Драгоценные камни
 
+        //- Другие публикации
         section.other-public
             .other-public__text-wrap
                 h2.heading-1.other-public__heading Другие публикации
@@ -103,6 +109,7 @@ block content
                         p.other-public__slider-text Все, кто когда-либо покупал дорогое ювелирное изделие с драгоценными камнями ...
                         a(href="#").other-public__slider-linc Читать подробнее
 
+        //- Энциклопедия камней
         section.gem-wiki
             h2.heading-1.gem-wiki__heading Энциклопедия камней
             .gem-wiki__slider-wrap
