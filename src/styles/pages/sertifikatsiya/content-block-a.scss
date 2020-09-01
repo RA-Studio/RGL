@@ -1,0 +1,26 @@
+.content-block-a {
+	width: var(--content-max-weight);
+	box-shadow: 1px 2px 10px rgba(16, 42, 67, 0.1);
+	border-radius: 10px;
+	background-color: $color-wheat;
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 60px 0;
+}
+
+.content-block-a__heading {
+	text-align: center;
+	width: 100%;
+	margin: 0 0 48px 0;
+}
+
+.content-block-a__main {
+	flex-basis: 750px;
+	margin-right: 40px;
+}
+
+.content-block-a__widget {
+	flex-basis: 300px;
+}
