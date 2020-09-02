@@ -1,0 +1,13 @@
+extends ../template
+
+block variables
+    - var title = 'Частые вопросы'
+    - var contactForm = true
+
+block content
+    main
+        include ../components/bread-crumbs.pug
+
+        h1.heading-1.heading-under-bread-crumbs О компании
+
+        .faq
