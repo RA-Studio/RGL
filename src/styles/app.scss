@@ -51,6 +51,7 @@ body {
 }
 
 a {
+	color: $color-green_orig;
 	text-decoration: none;
 	@include transition(color);
 
@@ -77,12 +78,20 @@ h1 {
 	line-height: 48px;
 }
 
+.heading-4,
+h4 {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+}
+
 h1,
 h2 {
 	margin: 40px 0 24px 0;
 }
 
-h3 {
+h3,
+h4 {
 	margin: 40px 0 16px 0;
 }
 
@@ -91,10 +100,10 @@ p {
 }
 
 p,
+h1,
 h2,
-h3 {
-	margin: 12px 0;
-
+h3,
+h4 {
 	&:first-child {
 		margin-top: 0;
 	}
@@ -202,6 +211,25 @@ h3 {
 	background-image: url(../images/icons/icon-arrow-min.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.linc_arrow {
+	display: flex;
+	color: $color-green_orig;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	align-items: center;
+
+	&::after {
+		display: block;
+		width: 18px;
+		height: 12px;
+		content: "";
+		background-color: $color-green_orig;
+		mask: url(../images/icons/icon-arrow-min.svg);
+		margin-left: 8px;
+	}
 }
 
 // Слайдер
