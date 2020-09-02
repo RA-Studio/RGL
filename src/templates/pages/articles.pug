@@ -1,0 +1,21 @@
+extends ../template
+
+block variables
+    - var title = 'Статьи'
+    - var contactForm = false
+
+block content
+    main
+        include ../components/bread-crumbs.pug
+
+        section.articles
+            h1.heading-1.articles__heading Статьи
+            .articles__list
+                article.articles__item
+                    a(href="#").articles__link
+                        figure.articles__figure
+                            img(src="", alt="")
+                            figcaption
+                        .
+                        h3
+                        time(datetime="2019-06-12") 12.06.2019
