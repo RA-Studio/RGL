@@ -22,7 +22,7 @@ $font-Raleway: "Raleway", sans-serif;
 
 // Анимация
 @mixin transition($property: all) {
-	transition: 250ms ease-in-out 0ms;
+	transition: 150ms ease-in-out 0ms;
 	transition-property: $property;
 }
 
@@ -198,11 +198,14 @@ h4 {
 	line-height: 16px;
 	align-items: center;
 	justify-content: center;
-	@include transition(background-color);
+	border: 1px solid $color-green_orig;
+
+	@include transition("background-color border-color");
 
 	&:hover {
 		text-decoration: none;
 		background-color: lighten($color-green_orig, 5);
+		border-color: lighten($color-green_orig, 5);
 	}
 }
 
@@ -211,6 +214,17 @@ h4 {
 	background-image: url(../images/icons/icon-arrow-min.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.button_hgost {
+	background-color: transparent;
+	border: 1px solid $color-neutral;
+	color: $color-neutral;
+
+	&:hover {
+		background-color: transparentize($color-neutral, 0.9);
+		border-color: $color-neutral;
+	}
 }
 
 .linc_arrow {
@@ -288,5 +302,6 @@ h4 {
 @import "./pages/sertifikatsiya/packaging.scss";
 
 @import "./common/certificates.scss";
+@import "./common/stages-work.scss";
 @import "./common/contact.scss";
 @import "./common/footer.scss";
