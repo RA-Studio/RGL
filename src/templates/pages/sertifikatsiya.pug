@@ -8,6 +8,7 @@ block content
     main
         include ../components/bread-crumbs.pug
 
+        //- Сертификация
         article.content-block-a
             h1.heading-1.content-block-a__heading Сертификация
             .content-block-a__main
@@ -29,6 +30,7 @@ block content
                 p Комплекс аналитических и классификационных работ по сертификации осуществляется дипломированными специалистами на базе лаборатории, оснащенной в соответствии с техническим регламентом, утверждённым организацией, зарегистрировавшей систему добровольной сертификации.
                 a(href="#").linc_arrow.content-block-a__widget-linc Заказать сертификат
         
+        //- Экспертное заключение
         article.content-block-a
             h1.heading-1.content-block-a__heading Экспертное заключение
             .content-block-a__main
@@ -56,6 +58,7 @@ block content
                 p Согласно постановлению правительства РФ от 5 апреля 1999 г. № 372 для продажи рубина физическому лицу необходим другой документ — сертификат соответствия.
                 a(href="#").linc_arrow.content-block-a__widget-linc Заказать экспертное заключения
 
+        //- Индивидуальная упаковка
         article.packaging
             h2.heading-1.packaging__heading Индивидуальная упаковка
             .packaging__content
@@ -67,5 +70,6 @@ block content
                     img(src="./assets/images/packaging-2-min.png", srcset="assets/images/packaging-2@2x-min.png 2x" alt="Индивидуальная упаковка").packaging__content-img
                     img(src="./assets/images/packaging-1-min.png", srcset="assets/images/packaging-1@2x-min.png 2x" alt="Индивидуальная упаковка").packaging__content-img
 
-
+        //- Виды сертификации
+        include ../components/certificates.pug
 
