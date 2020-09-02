@@ -12,22 +12,22 @@
 // }
 
 // Табы
-// const tabsButton = document.querySelectorAll(".about-doctor__tab-button");
-// const tabsContainer = document.querySelectorAll(".about-doctor__tab-container");
+const tabsButton = document.querySelectorAll(".stages-work__button");
+const tabsContainer = document.querySelectorAll(".stages-work__tabs-item");
 
-// for (const i of tabsButton) {
-// 	i.addEventListener("click", () => {
-// 		for (const b of tabsButton) {
-// 			b.classList.remove("tab-button-active");
-// 		}
-// 		i.classList.add("tab-button-active");
+for (const i of tabsButton) {
+	i.addEventListener("click", () => {
+		for (const b of tabsButton) {
+			b.classList.add("button_hgost-neutral");
+		}
+		i.classList.remove("button_hgost-neutral");
 
-// 		for (const c of tabsContainer) {
-// 			c.classList.remove("tab-container-active");
-// 		}
-// 		document.querySelector("#" + i.value).classList.add("tab-container-active");
-// 	});
-// }
+		for (const c of tabsContainer) {
+			c.classList.remove("tab-container-active");
+		}
+		document.querySelector("#" + i.value).classList.add("tab-container-active");
+	});
+}
 
 // настройка select
 // const allSelect = document.querySelectorAll(".form-bot__form-select");

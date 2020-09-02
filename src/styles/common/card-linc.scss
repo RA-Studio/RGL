@@ -40,3 +40,30 @@
 	font-size: 14px;
 	line-height: 16px;
 }
+
+.card-linc_content-block {
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	margin-bottom: 24px;
+
+	.card-linc__item {
+		flex-direction: row;
+		margin-bottom: 16px;
+		padding: 16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.card-linc__img {
+		width: 108px;
+		margin-right: 24px;
+		margin-bottom: 0;
+	}
+
+	.card-linc__heading {
+		font-size: 16px;
+	}
+}

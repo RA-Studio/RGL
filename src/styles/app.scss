@@ -23,7 +23,7 @@ $font-Marcellus: "Marcellus", serif;
 
 // Анимация
 @mixin transition($property: all) {
-	transition: 250ms ease-in-out 0ms;
+	transition: 150ms ease-in-out 0ms;
 	transition-property: $property;
 }
 
@@ -52,6 +52,7 @@ body {
 }
 
 a {
+	color: $color-green_orig;
 	text-decoration: none;
 	@include transition(color);
 
@@ -78,12 +79,20 @@ h1 {
 	line-height: 48px;
 }
 
+.heading-4,
+h4 {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+}
+
 h1,
 h2 {
 	margin: 40px 0 24px 0;
 }
 
-h3 {
+h3,
+h4 {
 	margin: 40px 0 16px 0;
 }
 
@@ -92,10 +101,10 @@ p {
 }
 
 p,
+h1,
 h2,
-h3 {
-	margin: 12px 0;
-
+h3,
+h4 {
 	&:first-child {
 		margin-top: 0;
 	}
@@ -103,6 +112,11 @@ h3 {
 	&:last-child {
 		margin-bottom: 0;
 	}
+}
+
+.heading-under-bread-crumbs {
+	text-align: center;
+	margin: 24px 0 0 0;
 }
 
 // миксы
@@ -190,11 +204,14 @@ h3 {
 	line-height: 16px;
 	align-items: center;
 	justify-content: center;
-	@include transition(background-color);
+	border: 1px solid $color-green_orig;
+
+	@include transition("background-color border-color");
 
 	&:hover {
 		text-decoration: none;
 		background-color: lighten($color-green_orig, 5);
+		border-color: lighten($color-green_orig, 5);
 	}
 }
 
@@ -203,6 +220,48 @@ h3 {
 	background-image: url(../images/icons/icon-arrow-min.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.button_hgost-neutral {
+	background-color: transparent;
+	border: 1px solid $color-neutral;
+	color: $color-neutral;
+
+	&:hover {
+		background-color: transparentize($color-neutral, 0.9);
+		border-color: $color-neutral;
+	}
+}
+
+.button_hgost-green {
+	background-color: transparent;
+	border: 1px solid $color-green_orig;
+	color: $color-green_orig;
+
+	&:hover {
+		background-color: $color-green_orig;
+		// border-color: $color-green_orig;
+		color: $color-wheat;
+	}
+}
+
+.linc_arrow {
+	display: flex;
+	color: $color-green_orig;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	align-items: center;
+
+	&::after {
+		display: block;
+		width: 18px;
+		height: 12px;
+		content: "";
+		background-color: $color-green_orig;
+		mask: url(../images/icons/icon-arrow-min.svg);
+		margin-left: 8px;
+	}
 }
 
 // Слайдер
@@ -254,13 +313,15 @@ h3 {
 @import "./pages/index/lab-rgl.scss";
 @import "./common/card-linc.scss";
 @import "./pages/index/advantages.scss";
-@import "./pages/index/certificates.scss";
 @import "./pages/index/other-public.scss";
 @import "./pages/index/gem-wiki.scss";
 
-@import "./pages/sertifikatsiya/content-block-a.scss";
+@import "./pages/sertifikatsiya/packaging.scss";
 
 @import "./pages/error/error.scss";
 
+@import "./common/content-block-a.scss";
+@import "./common/certificates.scss";
+@import "./common/stages-work.scss";
 @import "./common/contact.scss";
 @import "./common/footer.scss";

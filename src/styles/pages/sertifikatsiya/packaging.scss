@@ -1,0 +1,45 @@
+.packaging {
+	width: var(--content-max-weight);
+	margin-bottom: 72px;
+	margin-top: 60px;
+}
+
+.packaging__heading {
+	text-align: center;
+}
+
+.packaging__content {
+	display: flex;
+	padding: 40px;
+	border: 1px solid $color-light_viol;
+	border-radius: 5px;
+	background-color: $color-wheat;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.packaging__content-prise {
+	color: $color-sky;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+}
+
+.packaging__content-prise-number {
+	font-family: $font-Raleway;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 48px;
+}
+
+.packaging__content-img-wrap {
+	display: flex;
+}
+
+.packaging__content-img {
+	margin-right: 40px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
