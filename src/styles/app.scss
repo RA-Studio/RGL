@@ -19,6 +19,7 @@ $color-shitty: #dab588;
 // Шрифты
 $font-Montserrat: "Montserrat", sans-serif;
 $font-Raleway: "Raleway", sans-serif;
+$font-Marcellus: "Marcellus", serif;
 
 // Анимация
 @mixin transition($property: all) {
@@ -316,6 +317,8 @@ h4 {
 @import "./pages/index/gem-wiki.scss";
 
 @import "./pages/sertifikatsiya/packaging.scss";
+
+@import "./pages/error/error.scss";
 
 @import "./common/content-block-a.scss";
 @import "./common/certificates.scss";
