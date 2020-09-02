@@ -18,11 +18,9 @@ const tabsContainer = document.querySelectorAll(".stages-work__tabs-item");
 for (const i of tabsButton) {
 	i.addEventListener("click", () => {
 		for (const b of tabsButton) {
-			b.classList.remove("tab-button-active");
-			b.classList.add("button_hgost");
+			b.classList.add("button_hgost-neutral");
 		}
-		i.classList.add("tab-button-active", "button_hgost");
-		i.classList.remove("button_hgost");
+		i.classList.remove("button_hgost-neutral");
 
 		for (const c of tabsContainer) {
 			c.classList.remove("tab-container-active");
