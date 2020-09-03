@@ -1,0 +1,47 @@
+.conf {
+    padding: 0 calc(50% - 656px);
+    margin-bottom: 120px;
+}
+
+.conf-heading {
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+.conf__wrap {
+    margin-top: 24px;
+}
+
+.conf__wrapper {
+    &:first-of-type {
+        margin-bottom: 12px;
+    }
+}
+
+.conf__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.conf__title--margin {
+    margin-bottom: 8px;
+}
+
+.conf__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.conf__text {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 8px 0;
+
+    &:first-of-type {
+        margin: 0;
+    }
+}
