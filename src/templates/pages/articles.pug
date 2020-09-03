@@ -1,0 +1,84 @@
+extends ../template
+
+block variables
+    - var title = 'Зависит ли цвет изумруда от месторождения?'
+    - var contactForm = true
+
+block content
+    main
+        .articles-head
+            include ../components/bread-crumbs.pug
+            //- .articles-head__text-wrap
+            span.articles-head__tag Изумруд, Драгоценные камни
+            h1.articles-head__heading Зависит ли цвет изумруда от месторождения?
+            span.articles-head__date 12.06.2020
+
+        .articles-body
+            h2 Примеси хрома в изумруде
+            p Всем известно, что зеленый цвет изумруда связан с примесью хрома в нем. Но этот зеленый цвет у камней с того или иного месторождения имеет различные оттенки. Давайте разбираться почему.
+            p Все дело в дополнительных примесях, состав и количество которых напрямую зависит от типа месторождения изумруда. Так помимо хромовых центров окраски в изумрудах также могут быть центры двухвалентного железа в разной координации, иногда ванадия и титана, а также дырочные центры О-.
+            p Для изумрудов колумбийских месторождений характерен практически чистый зеленый цвет, иногда с незначительным голубым оттенком, вызванным плеохроизмом. Чистота цвета связана с тем, что хром в таких камнях является практически единственным хромофором из-за минимальных концентраций или же полного отсутствия примеси железа.
+            p Уральские изумруды имеют более высокую концентрацию Fe2+ в тетраэдрической координации, чем вызван более "теплый" оттенок камней с этого месторождения.
+            p Изумруды из Замбии характеризуются высокой концентрацией двухвалентного железа в октаэдрической координации и имеют сине-зеленый цвет, связанный с этим центром окраски.
+
+            h3 Цены на бесцветные бриллианты
+            table
+                thead
+                    tr
+                        th(style="width: 200px;") Масса, кар
+                        th(style="text-align: right;") Документ соответствия, руб.
+                        th(style="text-align: right;") Экспресс- диагностика, руб.
+                tbody
+                    tr
+                        td 0.05–0.10
+                        td(style="text-align: right;") 1 850
+                        td(style="text-align: right;") 1 000
+                    tr
+                        td 0.11–0.29
+                        td(style="text-align: right;") 1 900
+                        td(style="text-align: right;") 1 200
+                    tr
+                        td 0.30–0.49
+                        td(style="text-align: right;") 1 950
+                        td(style="text-align: right;") 1 300
+                    tr
+                        td 0.50–0.69
+                        td(style="text-align: right;") 2 500
+                        td(style="text-align: right;") 1 500
+                    tr
+                        td 0.70–0.99
+                        td(style="text-align: right;") 3 800
+                        td(style="text-align: right;") 1 700
+                    tr
+                        td 1.00–1.49
+                        td(style="text-align: right;") 4 200
+                        td(style="text-align: right;") 2 100
+                    tr
+                        td 1.50–1.99
+                        td(style="text-align: right;") 4 700
+                        td(style="text-align: right;") 2 700
+
+            h4 Ванадиевы центры
+            p Отдельно стоит выделить изумруды, окрашенные в зеленый цвет благодаря ванадиевым центрам. Иногда их называют "бесхромными". Такой тип камней встречается среди колумбийских изумрудов, а также данный тип окраски создается при синтезе изумрудов флюсовым и гидротермальным методами.
+            
+            .main-gallery__wrap
+                .main-gallery
+                    .main-gallery__item
+                        img(src="./assets/images/galeri-demo-02-min.jpg", alt="Изумруд").main-gallery__img
+                        span.main-gallery__img-name Изумруд
+                    .main-gallery__item
+                        img(src="./assets/images/galeri-demo-01-min.jpg", alt="Изумруд").main-gallery__img
+                        span.main-gallery__img-name Изумруд 2
+                    .main-gallery__item
+                        img(src="./assets/images/galeri-demo-02-min.jpg", alt="Изумруд").main-gallery__img
+                        span.main-gallery__img-name Изумруд 3
+                .main-gallery-controls
+                    img(src="./assets/images/galeri-demo-02-min.jpg", alt="Изумруд").main-gallery-controls__item
+                    img(src="./assets/images/galeri-demo-01-min.jpg", alt="Изумруд").main-gallery-controls__item
+                    img(src="./assets/images/galeri-demo-02-min.jpg", alt="Изумруд").main-gallery-controls__item
+                    
+            h3 Зависит ли цвет изумруда от месторождения?
+            p Всем известно, что зеленый цвет изумруда связан с примесью хрома в нем. Но этот зеленый цвет у камней с того или иного месторождения имеет различные оттенки. Давайте разбираться почему.
+            p Все дело в дополнительных примесях, состав и количество которых напрямую зависит от типа месторождения изумруда. Так помимо хромовых центров окраски в изумрудах также могут быть центры двухвалентного железа в разной координации, иногда ванадия и титана, а также дырочные центры О-.
+
+

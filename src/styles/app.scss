@@ -15,6 +15,7 @@ $color-sky: #186eaf;
 $color-green_orig: #1c4932;
 $color-supporting_yellow: #f8e3a3;
 $color-shitty: #dab588;
+$color-dark-shit: #d8b387;
 
 // Шрифты
 $font-Montserrat: "Montserrat", sans-serif;
@@ -117,6 +118,32 @@ h4 {
 .heading-under-bread-crumbs {
 	text-align: center;
 	margin: 24px 0 0 0;
+}
+
+table {
+	border: 1px solid $color-light_viol;
+	background-color: $color-wheat;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 14px;
+	border-spacing: 0;
+}
+
+th,
+td {
+	padding: 16px 24px;
+	margin: 0;
+	border-bottom: 1px solid $color-light_viol;
+}
+
+tr:last-child > td {
+	border-bottom: 0;
+}
+
+th {
+	font-weight: 600;
+	line-height: 20px;
+	text-align: left;
 }
 
 // миксы
@@ -321,6 +348,8 @@ h4 {
 @import "./pages/404.scss";
 
 @import "./pages/faq.scss";
+
+@import "./pages/articles.scss";
 
 @import "./common/content-block-a.scss";
 @import "./common/certificates.scss";

@@ -27,7 +27,8 @@
 		height: 10px;
 		margin-left: 14px;
 		content: "";
-		background: url(../images/icons/icon-angle-min.svg) no-repeat center;
+		background-color: $color-neutral;
+		mask: url(../images/icons/icon-angle-min.svg) no-repeat center;
 	}
 }
 
