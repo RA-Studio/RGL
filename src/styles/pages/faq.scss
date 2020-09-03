@@ -1,2 +1,104 @@
+@charset "UTF-8";
+/*!
+ * Accordion v2.8.0
+ * Simple accordion created in pure Javascript.
+ * https://github.com/michu2k/Accordion
+ *
+ * Copyright 2017-2019 Michał Strumpf
+ * Published under MIT License
+ */
+.ac {
+	border: 1px solid #ddd;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.ac > .ac-q {
+	display: block;
+	cursor: pointer;
+	position: relative;
+}
+
+.ac > .ac-a {
+	overflow: hidden;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+
+.ac.js-enabled > .ac-a {
+	visibility: hidden;
+}
+
+.ac.is-active > .ac-a {
+	visibility: visible;
+}
+
+.ac-close {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 50%;
+	right: 40px;
+	transform: translate(0, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		background-color: $color-text-main;
+	}
+
+	&::before {
+		width: 100%;
+		height: 2px;
+	}
+
+	&::after {
+		width: 2px;
+		height: 100%;
+	}
+}
+
+.ac.is-active .ac-close::after {
+	display: none;
+}
+
+// // // //
 .faq {
+	width: var(--content-max-weight);
+	margin: 64px 0 120px 0;
+}
+
+.faq__item {
+	border: 1px solid $color-light_viol;
+	border-radius: 5px;
+	margin-bottom: 24px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.faq__item-head {
+	padding: 24px 40px;
+}
+
+.faq__item-head-text {
+	pointer-events: none;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0;
+}
+
+.faq__item-content {
+	padding: 24px 40px;
+	border-top: 1px solid $color-light_viol;
 }

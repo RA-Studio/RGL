@@ -101,3 +101,7 @@ if (document.querySelector(".gem-wiki__slider")) {
 		// navPosition: "bottom",
 	});
 }
+
+if (document.querySelector(".faq")) {
+	new Accordion(".faq");
+}
