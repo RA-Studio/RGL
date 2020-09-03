@@ -1,0 +1,18 @@
+.certificate-popup
+    .certificate-popup__fade
+        section.contact.certificate-popup__wrap
+            .contact__form-wrap
+                h1.heading-1.contact__heading Заказать сертификат
+                p.contact__text Заполните форму, и мы вам перезвоним<br> в ближайшее время
+                form(action="").contact__form
+                    label.contact__input-wrap Ваше имя 
+                        span *
+                        input(type="text", name="userName" placeholder="Имя" required)#userName.contact__input
+                    label.contact__input-wrap Номер телефона 
+                        span *
+                        input(type="tel", name="userPhone" placeholder="Телефон" min="1" required)#userPhone.contact__input.phone-mask
+
+                    button(type="submit").button.contact__button Перезвоните мне
+                    p.contact__text-conf Нажимая на кнопку, вы соглашаетесь<br> с 
+                        a(href="#") политикой конфиденциальности сайта
+                button(type="button" aria-label="Закрыть окно").certificate-popup--close.popup--close

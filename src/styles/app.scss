@@ -9,8 +9,9 @@ $color-wheat: #ffffff;
 $color-blue_neut: #f8f9fb;
 $color-light_viol: #d9e2ec;
 $color-lght_green: #f1f9f6;
-$color-50: rgba(16, 42, 67, 0.5);
+$color-01: rgba(16, 42, 67, 0.1);
 $color-25: rgba(16, 42, 67, 0.25);
+$color-50: rgba(16, 42, 67, 0.5);
 $color-neutral: #617d97;
 $color-sky: #186eaf;
 $color-supporting_blue: #4097D7;
@@ -335,3 +336,4 @@ h4 {
 @import "./pages/conf/conf.scss";
 
 @import "./common/pagination.scss";
+@import "./common/certificate-popup.scss"
