@@ -1,0 +1,65 @@
+.pagination {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.pagination__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pagination__item {
+    display: flex;
+}
+
+.pagination__link {
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-text-main;
+    background: $color-wheat;
+    
+    border: 1px solid $color-25;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 9px 15px 13px;
+
+    &:hover {
+        border-color: $color-shitty;
+        text-decoration: none;
+    }
+}
+
+.pagination__link--previous,
+.pagination__link--next {
+    position: relative;
+    border: none;
+}
+
+.pagination__link--previous::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    background: url('../images/icons/icon-angle-min.svg') no-repeat;
+    transform: rotate(180deg);
+    top: 15px;
+}
+
+.pagination__link--next::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    background: url('../images/icons/icon-angle-min.svg') no-repeat;
+    top: 15px;
+    left: 42%;
+}

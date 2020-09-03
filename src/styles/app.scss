@@ -10,9 +10,12 @@ $color-blue_neut: #f8f9fb;
 $color-light_viol: #d9e2ec;
 $color-lght_green: #f1f9f6;
 $color-50: rgba(16, 42, 67, 0.5);
+$color-25: rgba(16, 42, 67, 0.25);
 $color-neutral: #617d97;
 $color-sky: #186eaf;
+$color-supporting_blue: #4097d7;
 $color-green_orig: #1c4932;
+$color-green_blend: #137d64;
 $color-supporting_yellow: #f8e3a3;
 $color-shitty: #dab588;
 $color-dark-shit: #d8b387;
@@ -356,3 +359,10 @@ th {
 @import "./common/stages-work.scss";
 @import "./common/contact.scss";
 @import "./common/footer.scss";
+
+@import "./pages/error/error.scss";
+@import "./pages/articles/articles.scss";
+@import "./pages/articles/articles-list.scss";
+@import "./pages/conf/conf.scss";
+
+@import "./common/pagination.scss";
