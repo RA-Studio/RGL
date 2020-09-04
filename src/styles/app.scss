@@ -270,8 +270,18 @@ th {
 
 	&:hover {
 		background-color: $color-green_orig;
-		// border-color: $color-green_orig;
 		color: $color-wheat;
+	}
+}
+
+.button_hgost-light {
+	background-color: transparent;
+	border: 1px solid $color-light_viol;
+	color: $color-neutral;
+
+	&:hover {
+		background-color: transparentize($color-light_viol, 0.6);
+		border-color: $color-light_viol;
 	}
 }
 
@@ -283,14 +293,25 @@ th {
 	line-height: 16px;
 	align-items: center;
 
+	&:hover {
+		text-decoration: none;
+
+		&::after {
+			opacity: 1;
+			margin-left: 8px;
+		}
+	}
+
 	&::after {
+		@include transition("margin-left opacity");
 		display: block;
 		width: 18px;
 		height: 12px;
 		content: "";
 		background-color: $color-green_orig;
 		mask: url(../images/icons/icon-arrow-min.svg);
-		margin-left: 8px;
+		margin-left: 0;
+		opacity: 0;
 	}
 }
 
@@ -354,13 +375,14 @@ th {
 
 @import "./pages/articles-page.scss";
 
+@import "./pages/site-search.scss";
+
 @import "./common/content-block-a.scss";
 @import "./common/certificates.scss";
 @import "./common/stages-work.scss";
 @import "./common/contact.scss";
 @import "./common/footer.scss";
 
-@import "./pages/error/error.scss";
 @import "./pages/articles/articles.scss";
 @import "./pages/articles/articles-list.scss";
 @import "./pages/conf/conf.scss";
