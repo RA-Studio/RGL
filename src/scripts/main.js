@@ -29,19 +29,7 @@ for (const i of tabsButton) {
 	});
 }
 
-// настройка select
-// const allSelect = document.querySelectorAll(".form-bot__form-select");
-// for (const i of allSelect) {
-// 	i.addEventListener("change", () => {
-// 		if (i.value != "none") {
-// 			i.classList.add("select-on");
-// 			i.nextSibling.classList.remove("input-lable-none");
-// 		}
-// 	});
-// }
-
 // Маска для телефона
-// import IMask from "imask.min.js";
 document.querySelectorAll(".phone-mask").forEach((item) => {
 	let telMask = IMask(item, {
 		mask: "+{7}(000)000-00-00",
@@ -126,4 +114,19 @@ if (mainGalleryWrap) {
 // Аккардион
 if (document.querySelector(".faq")) {
 	new Accordion(".faq");
+}
+
+// popup
+
+const pooupBut = document.querySelector(".calculator__price-button");
+
+if (pooupBut) {
+	const pooupWindow = document.querySelector(".certificate-popup");
+	const pooupClose = document.querySelector(".popup--close");
+	pooupBut.addEventListener("click", () => {
+		pooupWindow.classList.add("certificate-popup-active");
+	});
+	pooupClose.addEventListener("click", () => {
+		pooupWindow.classList.remove("certificate-popup-active");
+	});
 }
