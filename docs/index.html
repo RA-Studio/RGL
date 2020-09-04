@@ -69,19 +69,19 @@
       <section class="advantages">
         <h2 class="heading-1 advantages__heading">Преимущества работы с нами</h2>
         <div class="advantages__wrap">
-          <div class="advantages__item"><img class="advantages__item-icon" src="./assets/images/icons/icon-paper-min.svg" alt="">
+          <div class="advantages__item"><img class="advantages__item-icon" src="./assets/images/icons/icon-paper-min.svg" alt="Иконка">
             <p class="advantages__item-text">Наши специалисты дипломированы российскими и зарубежными геммологическими учебными центрами. Мы гарантируем 100% достоверность информации</p>
           </div>
-          <div class="advantages__item"><img class="advantages__item-icon" src="./assets/images/icons/icon-micro-min.svg" alt="">
+          <div class="advantages__item"><img class="advantages__item-icon" src="./assets/images/icons/icon-micro-min.svg" alt="Иконка">
             <p class="advantages__item-text">Имеем современное оборудование для точности исследования, которое регулярно проверяем и обновляем</p>
           </div>
-          <div class="advantages__item"><img class="advantages__item-icon" src="./assets/images/icons/icon-scroll-min.svg" alt="">
+          <div class="advantages__item"><img class="advantages__item-icon" src="./assets/images/icons/icon-scroll-min.svg" alt="Иконка">
             <p class="advantages__item-text">Наши сертификаты имеют презентабельный вид и подробную информацию о вашем камне или изделии, их приятно держать в руках</p>
           </div>
-          <div class="advantages__item"><img class="advantages__item-icon" src="./assets/images/icons/icon-ring-plate-min.svg" alt="">
+          <div class="advantages__item"><img class="advantages__item-icon" src="./assets/images/icons/icon-ring-plate-min.svg" alt="Иконка">
             <p class="advantages__item-text">Предоставляем информацию в кратчайшие сроки вместе с собственным руководством по качеству</p>
           </div>
-          <div class="advantages__item"><img class="advantages__item-icon" src="./assets/images/icons/icon-ring-price-min.svg" alt="">
+          <div class="advantages__item"><img class="advantages__item-icon" src="./assets/images/icons/icon-ring-price-min.svg" alt="Иконка">
             <p class="advantages__item-text">Лояльные цены за качественную и быструю работу</p>
           </div>
         </div><a class="button header__top-button" href="#">Услуги и цены</a>
@@ -193,8 +193,30 @@
         </div>
       </div>
     </footer>
+    <div class="certificate-popup">
+      <div class="certificate-popup__fade">
+        <section class="contact certificate-popup__wrap">
+          <div class="contact__form-wrap">
+            <h1 class="heading-1 contact__heading">Заказать сертификат</h1>
+            <p class="contact__text">Заполните форму, и мы вам перезвоним<br> в ближайшее время</p>
+            <form class="contact__form" action="">
+              <label class="contact__input-wrap">Ваше имя <span>*</span>
+                <input class="contact__input" type="text" name="userName" placeholder="Имя" required id="userName">
+              </label>
+              <label class="contact__input-wrap">Номер телефона <span>*</span>
+                <input class="contact__input phone-mask" type="tel" name="userPhone" placeholder="Телефон" min="1" required id="userPhone">
+              </label>
+              <button class="button contact__button" type="submit">Перезвоните мне</button>
+              <p class="contact__text-conf">Нажимая на кнопку, вы соглашаетесь<br> с <a href="#">политикой конфиденциальности сайта</a></p>
+            </form>
+            <button class="certificate-popup--close popup--close" type="button" aria-label="Закрыть окно"></button>
+          </div>
+        </section>
+      </div>
+    </div>
     <script src="assets/scripts/imask.min.js"></script>
     <script src="assets/scripts/tiny-slider.js"></script>
+    <script src="assets/scripts/accordion.min.js"></script>
     <script src="assets/scripts/main.js"></script>
   </body>
 </html>
