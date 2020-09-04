@@ -57,8 +57,8 @@ body {
 }
 
 a {
-	color: $color-green_orig;
 	text-decoration: none;
+	color: $color-green_orig;
 	@include transition(color);
 
 	&:hover {
@@ -84,10 +84,18 @@ h1 {
 	line-height: 48px;
 }
 
+.heading-2,
+h2 {
+	font-family: $font-Raleway;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 40px;
+}
+
 .heading-4,
 h4 {
-	font-weight: 600;
 	font-size: 18px;
+	font-weight: 600;
 	line-height: 24px;
 }
 
@@ -120,23 +128,23 @@ h4 {
 }
 
 .heading-under-bread-crumbs {
-	text-align: center;
 	margin: 24px 0 0 0;
+	text-align: center;
 }
 
 table {
-	border: 1px solid $color-light_viol;
-	background-color: $color-wheat;
-	border-radius: 5px;
 	width: 100%;
-	font-size: 14px;
 	border-spacing: 0;
+	border: 1px solid $color-light_viol;
+	border-radius: 5px;
+	background-color: $color-wheat;
+	font-size: 14px;
 }
 
 th,
 td {
-	padding: 16px 24px;
 	margin: 0;
+	padding: 16px 24px;
 	border-bottom: 1px solid $color-light_viol;
 }
 
@@ -145,9 +153,9 @@ tr:last-child > td {
 }
 
 th {
+	text-align: left;
 	font-weight: 600;
 	line-height: 20px;
-	text-align: left;
 }
 
 // миксы
@@ -217,6 +225,30 @@ th {
 	background-image: url(../images/icons/icon-search-min.svg);
 }
 
+.input_select {
+	position: relative;
+
+	select {
+		width: 100%;
+		appearance: none;
+	}
+
+	&::after {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		right: 16px;
+		display: block;
+		width: 6px;
+		height: 10px;
+		content: "";
+		transform: translateY(-40%) rotate(90deg);
+		pointer-events: none;
+		background-color: $color-neutral;
+		mask: url(../images/icons/icon-angle-min.svg) no-repeat center;
+	}
+}
+
 // button
 .button {
 	display: inline-flex;
@@ -227,6 +259,7 @@ th {
 	text-align: center;
 	color: $color-wheat;
 	border: none;
+	border: 1px solid $color-green_orig;
 	border-radius: 5px;
 	background-color: $color-green_orig;
 	font-family: $font-Montserrat;
@@ -235,14 +268,13 @@ th {
 	line-height: 16px;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid $color-green_orig;
 
 	@include transition("background-color border-color");
 
 	&:hover {
 		text-decoration: none;
-		background-color: lighten($color-green_orig, 5);
 		border-color: lighten($color-green_orig, 5);
+		background-color: lighten($color-green_orig, 5);
 	}
 }
 
@@ -254,35 +286,35 @@ th {
 }
 
 .button_hgost-neutral {
-	background-color: transparent;
-	border: 1px solid $color-neutral;
 	color: $color-neutral;
+	border: 1px solid $color-neutral;
+	background-color: transparent;
 
 	&:hover {
-		background-color: transparentize($color-neutral, 0.9);
 		border-color: $color-neutral;
+		background-color: transparentize($color-neutral, 0.9);
 	}
 }
 
 .button_hgost-green {
-	background-color: transparent;
-	border: 1px solid $color-green_orig;
 	color: $color-green_orig;
+	border: 1px solid $color-green_orig;
+	background-color: transparent;
 
 	&:hover {
-		background-color: $color-green_orig;
 		color: $color-wheat;
+		background-color: $color-green_orig;
 	}
 }
 
 .button_hgost-light {
-	background-color: transparent;
-	border: 1px solid $color-light_viol;
 	color: $color-neutral;
+	border: 1px solid $color-light_viol;
+	background-color: transparent;
 
 	&:hover {
-		background-color: transparentize($color-light_viol, 0.6);
 		border-color: $color-light_viol;
+		background-color: transparentize($color-light_viol, 0.6);
 	}
 }
 
@@ -298,8 +330,8 @@ th {
 		text-decoration: none;
 
 		&::after {
-			opacity: 1;
 			margin-left: 8px;
+			opacity: 1;
 		}
 	}
 
@@ -308,11 +340,11 @@ th {
 		display: block;
 		width: 18px;
 		height: 12px;
+		margin-left: 0;
 		content: "";
+		opacity: 0;
 		background-color: $color-green_orig;
 		mask: url(../images/icons/icon-arrow-min.svg);
-		margin-left: 0;
-		opacity: 0;
 	}
 }
 
@@ -378,6 +410,7 @@ th {
 
 @import "./pages/site-search.scss";
 
+@import "./common/calculator.scss";
 @import "./common/content-block-a.scss";
 @import "./common/certificates.scss";
 @import "./common/stages-work.scss";
@@ -389,4 +422,4 @@ th {
 @import "./pages/conf/conf.scss";
 
 @import "./common/pagination.scss";
-@import "./common/certificate-popup.scss"
+@import "./common/certificate-popup.scss";
