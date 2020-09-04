@@ -52,13 +52,13 @@ block content
                                         spna +15
                         
                             .calculator__radio-wrap
-                                label.calculator__radio-label
-                                    input(type="radio", name="calculator").calculator__radio
-                                    span.calculator__radio-text Экспертное заключение
-                                label.calculator__radio-label
-                                    input(type="radio", name="calculator" checked).calculator__radio
-                                    span.calculator__radio-text Экспертное заключение
-                                    span.calculator__radio-text-b Без выдачи экспертного заключения
+                                .calculator__radio-label
+                                    input(type="radio", name="calculator")#rb1.calculator__radio
+                                    label(for="rb1").calculator__radio-text Экспертное заключение
+                                .calculator__radio-label
+                                    input(type="radio", name="calculator" checked)#rb2.calculator__radio
+                                    label(for="rb2").calculator__radio-text Экспресс-диагностика
+                                        span.calculator__radio-text-b Без выдачи экспертного заключения
 
                         .calculator__price-wrap
                             .calculator__price-text-wrap

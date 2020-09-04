@@ -224,16 +224,37 @@
 }
 
 .calculator__radio {
-	position: absolute;
-	top: 2px;
-	left: 0;
-	margin: 0;
-	padding: 0;
+	display: none;
+	// position: absolute;
+	// top: 2px;
+	// left: 0;
+	// margin: 0;
+	// padding: 0;
+
+	+ label::before {
+		content: "";
+		width: 14px;
+		height: 14px;
+		border-radius: 14px;
+		position: absolute;
+		top: 1px;
+		left: 0;
+		background-color: $color-wheat;
+		border: 3px solid $color-wheat;
+		box-sizing: border-box;
+	}
+
+	&:checked + label::before {
+		background-color: $color-sky;
+	}
 }
 
 .calculator__radio-text {
 	font-size: 14px;
 	line-height: 16px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
 }
 
 .calculator__radio-text-b {
