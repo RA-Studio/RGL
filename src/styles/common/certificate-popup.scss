@@ -1,0 +1,81 @@
+.certificate-popup {
+    display: none;
+}
+
+.certificate-popup__fade::before {
+    content: '';
+    position: fixed;
+    width: 100%; 
+	height: 100%;
+	background: $color-25;
+	top: 0;
+	left: 0;
+    z-index: 100;
+}
+
+.certificate-popup__wrap {
+    position: fixed;
+    width: 772px;
+    height: 576px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 104px;
+
+    background: $color-wheat;
+    box-shadow: 1px 2px 10px $color-01;
+    border-radius: 5px;
+    z-index: 2000;
+
+    .contact__form-wrap {
+        width: 403px;
+    }
+
+    .contact__heading,
+    .contact__text {
+        text-align: center;
+    }
+
+    .contact__heading {
+        white-space: nowrap;
+        letter-spacing: -0.02em;
+    }
+
+    .contact__text-conf {
+        margin: 0;
+    }
+}
+
+.certificate-popup--close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background-color: $color-text-main;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
