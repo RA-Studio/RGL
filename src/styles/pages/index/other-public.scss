@@ -1,7 +1,7 @@
 .other-public {
 	display: flex;
 	width: 100%;
-	margin: 72px 0;
+	margin: 78px 0 120px;
 	padding: 48px 0;
 	background-color: $color-wheat;
 	justify-content: center;
@@ -70,7 +70,7 @@
 	left: 0;
 	display: flex;
 	margin-top: 28px;
-	color: $color-green_orig;
+	// color: $color-green_orig;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16px;
@@ -83,5 +83,9 @@
 		content: "";
 		background-color: $color-green_orig;
 		mask: url(../images/icons/icon-arrow-min.svg);
+	}
+
+	&:hover::after {
+		background-color: $color-green_blend;
 	}
 }

@@ -1,0 +1,11 @@
+extends ../template
+
+block variables
+    - var title = 'Контакты'
+    - var contactForm = true
+
+block content
+    main
+        include ../components/bread-crumbs.pug
+
+        h1(style='margin-bottom: 64px;').heading-1.heading-under-bread-crumbs Контакты

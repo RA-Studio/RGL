@@ -135,7 +135,7 @@ if (document.querySelector(".faq")) {
 
 // popup
 
-const pooupBut = document.querySelector(".calculator__price-button");
+const pooupBut = document.querySelector(".popup-open");
 
 if (pooupBut) {
 	const pooupWindow = document.querySelector(".certificate-popup");

@@ -75,7 +75,7 @@
 	padding-bottom: 12px;
 	height: 80px;
 	min-height: 40px;
-	max-height: 400px;
+	max-height: 200px;
 	resize: vertical;
 }
 
@@ -90,6 +90,11 @@
 
 	> a {
 		font-weight: normal;
+		color: $color-neutral;
+
+		&:hover {
+			color: $color-text-main;
+		}
 	}
 }
 

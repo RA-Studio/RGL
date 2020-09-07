@@ -16,6 +16,7 @@ $color-neutral: #617d97;
 $color-sky: #186eaf;
 $color-supporting_blue: #4097d7;
 $color-green_orig: #1c4932;
+$color-green_orig-hover: #235b3f;
 $color-green_blend: #137d64;
 $color-supporting_yellow: #f8e3a3;
 $color-shitty: #dab588;
@@ -61,7 +62,7 @@ a {
 	@include transition(color);
 
 	&:hover {
-		text-decoration: underline;
+		color: $color-green_blend;
 	}
 }
 
@@ -157,6 +158,11 @@ th {
 	line-height: 20px;
 }
 
+figure {
+	margin: 0;
+	padding: 0;
+}
+
 // миксы
 .text_center {
 	text-align: center;
@@ -214,6 +220,11 @@ th {
 		background-position: center;
 		flex-shrink: 0;
 	}
+
+	.input:not(:placeholder-shown),
+	.input:not(:placeholder-shown) ~ label {
+		border-color: $color-neutral;
+	}
 }
 
 .input_icon-doc {
@@ -268,12 +279,13 @@ th {
 	align-items: center;
 	justify-content: center;
 
-	@include transition("background-color border-color");
+	@include transition("background-color border-color color");
 
 	&:hover {
 		text-decoration: none;
-		border-color: lighten($color-green_orig, 5);
-		background-color: lighten($color-green_orig, 5);
+		border-color: $color-green_orig-hover;
+		background-color: $color-green_orig-hover;
+		color: $color-wheat;
 	}
 }
 
@@ -290,8 +302,9 @@ th {
 	background-color: transparent;
 
 	&:hover {
-		border-color: $color-neutral;
-		background-color: transparentize($color-neutral, 0.9);
+		border-color: $color-green_blend;
+		background-color: $color-green_blend;
+		color: $color-wheat;
 	}
 }
 
@@ -301,8 +314,9 @@ th {
 	background-color: transparent;
 
 	&:hover {
-		color: $color-wheat;
+		border-color: $color-green_orig;
 		background-color: $color-green_orig;
+		color: $color-wheat;
 	}
 }
 
@@ -382,6 +396,14 @@ th {
 			background-color: $color-green_orig;
 			mask: url(../images/icons/icon-arrow-min.svg);
 		}
+
+		&:hover {
+			background-color: $color-green_orig;
+
+			&::after {
+				background-color: $color-wheat;
+			}
+		}
 	}
 
 	> button[data-controls="prev"]::after {
@@ -422,3 +444,7 @@ th {
 
 @import "./common/pagination.scss";
 @import "./common/certificate-popup.scss";
+
+.color_green_blend {
+	color: $color-green_blend;
+}

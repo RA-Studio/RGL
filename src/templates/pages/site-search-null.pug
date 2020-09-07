@@ -1,0 +1,33 @@
+extends ../template
+
+block variables
+    - var title = 'Поиск по сайту'
+    - var contactForm = true
+
+block content
+    main
+        include ../components/bread-crumbs.pug
+
+        h1.heading-1.heading-under-bread-crumbs Поиск по сайту
+
+        .site-search
+            .site-search__head
+                form.site-search__head-form
+                    .input_icon.site-search__head-search
+                        input(type="text" placeholder="Поиск по сайту")#m-search-input.input
+                        label(for="m-search-input").input_icon-search
+                    .site-search__head-button-wrap
+                        button.button.button_hgost-light.site-search__head-button Сертификация
+                        button.button.button_hgost-light.site-search__head-button Экспертиза
+                        button.button.site-search__head-button Услуги и цены
+                        button.button.button_hgost-light.site-search__head-button Статьи
+                        button.button.button_hgost-light.site-search__head-button FAQ
+            
+            .site-search__wrap
+                h2.heading-4.site-search__heading Результатов не найдено
+                .site-search__wrap-button-wrap
+                    button.button.site-search__wrap-button На главную
+                    a(href="#").site-search__wrap-linc Связаться с нами
+            
+            .site-search__bot
+                include ../components/pagination.pug

@@ -71,6 +71,70 @@ block content
                                 a(href="#").calculator__price-linc Пример
 
 
+        .calculator
+            .calculator__head
+                h2.heading-2.calculator__head-heading Сертификация
+                .calculator__head-booton-wrap
+                        button.button.calculator__head-booton Бриллианты
+                        button.button.button_hgost-neutral.calculator__head-booton Ювелирные изделия
+                        button.button.button_hgost-neutral.calculator__head-booton Драгоценные камни
+            
+            .calculator__body
+                .calculator__tab-wrap
+                    botton.calculator__tab-item
+                        img(src="./assets/images/calculator-rect-min.png", srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Бесцветные бриллианты").calculator__tab-img
+                        span.calculator__tab-text Бесцветные бриллианты
+                    botton.calculator__tab-item.calculator__tab-activ
+                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты").calculator__tab-img
+                        span.calculator__tab-text Цветные бриллианты
+
+                .calculator__main
+                    .calculator__main-head
+                        .calculator__main-name
+                            img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты").calculator__main-name-img
+                            h4.calculator__main-name-text Цветные бриллианты
+                        
+                        .input_select.calculator__main-head-input
+                            select(placeholder="Название камня").input
+                                option(value="1") Название камня 1
+                                option(value="2") Название камня 2
+                                option(value="3") Название камня 3
+                    
+                    .calculator__main-body
+                        .calculator__tuning-wrap
+                            .calculator__tuning-item
+                                .calculator__tuning-karat
+                                    span.calculator__tuning-karat-name Масса, кар.
+                                    input(type="text" value="0.8").calculator__tuning-karat-number
+                                .calculator__tuning-input-wrap
+                                    input(type="range" min="0.05" max="15" step="0.01" value="0.8").calculator__tuning-input
+                                    .calculator__tuning-input-max-min
+                                        span 0.05
+                                        spna +15
+                        
+                            .calculator__radio-wrap
+                                .calculator__radio-label
+                                    input(type="radio", name="calculator2")#rb3.calculator__radio
+                                    label(for="rb3").calculator__radio-text Экспертное заключение
+                                .calculator__radio-label
+                                    input(type="radio", name="calculator2" checked)#rb4.calculator__radio
+                                    label(for="rb4").calculator__radio-text Экспресс-диагностика
+                                        span.calculator__radio-text-b Без выдачи экспертного заключения
+
+                        .calculator__price-wrap
+                            .calculator__price-text-wrap
+                                span.calculator__price-text Общая стоимость
+                                span.calculator__price-number.color_green_blend 1 600 
+                                    spna.calculator__price-rub руб.
+                                    span.calculator__price-old 1 700 
+                                        span.calculator__price-old-rub руб.
+                            
+                            .calculator__price-button-wrap
+                                button.button.calculator__price-button.popup-open Заказать сертификат
+                                a(href="#").calculator__price-linc Пример
+
+
+
 
         //- Индивидуальная упаковка
         article.packaging

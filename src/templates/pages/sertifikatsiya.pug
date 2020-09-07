@@ -15,12 +15,12 @@ block content
                 p Сертификация обработанных (огранённых) ювелирный камней и изделий с ними — это процедура подтверждения соответствия предъявленной на экспертизу продукции установленным требованиям. 
                     br/ Результатом проведения сертификации является выдача <strong>сертификата соответствия</strong>.
                 div.content-block-a__img-wrap
-                    .content-block-a__img-text-wrap
+                    figure.content-block-a__img-text-wrap
                         img(src="./assets/images/sert-doc-02-min.png", srcset="assets/images/sert-doc-02@2x-min.png 2x" alt="Сертификат соответствия бриллианта").content-block-a__img
-                        span.content-block-a__img-text Сертификат соответствия бриллианта
-                    .content-block-a__img-text-wrap
+                        figcaption.content-block-a__img-text Сертификат соответствия бриллианта
+                    figure.content-block-a__img-text-wrap
                         img(src="./assets/images/sert-doc-01-min.png", srcset="assets/images/sert-doc-01@2x-min.png 2x" alt="Сертификат соответствия бриллианта").content-block-a__img
-                        span.content-block-a__img-text Сертификат соответствия партии драгоценных камней
+                        figcaption.content-block-a__img-text Сертификат соответствия партии драгоценных камней
                 p В сертификате описывается природа, происхождение, характеристики драгоценного камня и результаты проверки на облагораживание.
                     br/ Согласно постановлению правительства РФ от 5 апреля 1999 г. № 372, сертификат необходим для продажи драгоценного камня первой категории физическому лицу. Сертификат показывает соответствие драгоценных камней российским стандартам: ТУ 117-4.2099-2002 для бриллиантов, ТУ 95.335-88 для изумрудов.
                     br/ После оформления сертификата можно заказать бесплатную стоимостную оценку.
@@ -28,7 +28,7 @@ block content
             .content-block-a__widget
                 p <strong>Сертификат соответствия —</strong> юридический документ с полной информацией о драгоценном камне первой категории. Он показывает соответствие камня национальным стандартам.
                 p Комплекс аналитических и классификационных работ по сертификации осуществляется дипломированными специалистами на базе лаборатории, оснащенной в соответствии с техническим регламентом, утверждённым организацией, зарегистрировавшей систему добровольной сертификации.
-                a(href="#").linc_arrow.content-block-a__widget-linc Заказать сертификат
+                a(href="#").button.content-block-a__widget-linc.popup-open Заказать сертификат
         
         //- Экспертное заключение
         article.content-block-a
@@ -49,14 +49,15 @@ block content
                     li Месторождение, если у рубина есть характерные признаки
         
                 div.content-block-a__img-wrap 
-                    .content-block-a__img-text-wrap
+                    figure.content-block-a__img-text-wrap
                         img(src="./assets/images/sert-doc-03-min.png", srcset="assets/images/sert-doc-03@2x-min.png 2x" alt="Сертификат соответствия бриллианта").content-block-a__img
-                        span.content-block-a__img-text Экспертное заключение рубина
+                        figcaption.content-block-a__img-text Экспертное заключение рубина
                         
             .content-block-a__widget
                 p <strong>Экспертное заключение</strong> — документ с полной информацией о ювелирном изделии или драгоценном камне. Он показывает природу и качество драгоценностей.
-                p Согласно постановлению правительства РФ от 5 апреля 1999 г. № 372 для продажи рубина физическому лицу необходим другой документ — сертификат соответствия.
-                a(href="#").linc_arrow.content-block-a__widget-linc Заказать экспертное заключения
+                p Согласно постановлению правительства РФ от 5 апреля 1999 г. № 372 для продажи рубина физическому лицу необходим другой документ — 
+                    a(href="#") сертификат соответствия.
+                a(href="#").button.content-block-a__widget-linc Заказать экспертное заключения
 
         //- Индивидуальная упаковка
         article.packaging
@@ -75,3 +76,5 @@ block content
         
         article.stages-work-wrap
             include ../components/stages-work.pug
+
+    include ../components/certificate-popup.pug

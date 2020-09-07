@@ -40,4 +40,8 @@
 
 .bread-crumbs__limc {
 	color: $color-neutral;
+
+	&:hover {
+		color: $color-text-main;
+	}
 }

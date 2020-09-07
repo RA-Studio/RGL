@@ -54,6 +54,21 @@
 	padding: 24px 40px;
 }
 
+.site-search__wrap-button-wrap {
+	display: flex;
+	align-items: baseline;
+}
+
+.site-search__wrap-button {
+	margin-right: 24px;
+}
+
+.site-search__wrap-linc {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}
+
 .site-search__item {
 	margin-bottom: 24px;
 	display: flex;

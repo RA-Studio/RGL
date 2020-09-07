@@ -2,7 +2,7 @@ extends ../template
 
 block variables
     - var title = 'Зависит ли цвет изумруда от месторождения?'
-    - var contactForm = true
+    - var contactForm = false
 
 block content
     main
@@ -63,15 +63,15 @@ block content
             
             .main-gallery__wrap
                 .main-gallery
-                    .main-gallery__item
+                    figure.main-gallery__item
                         img(src="./assets/images/galeri-demo-02-min.jpg", alt="Изумруд").main-gallery__img
-                        span.main-gallery__img-name Изумруд
-                    .main-gallery__item
+                        figcaption.main-gallery__img-name Изумруд
+                    figure.main-gallery__item
                         img(src="./assets/images/galeri-demo-01-min.jpg", alt="Изумруд").main-gallery__img
-                        span.main-gallery__img-name Изумруд 2
-                    .main-gallery__item
+                        figcaption.main-gallery__img-name Изумруд 2
+                    figure.main-gallery__item
                         img(src="./assets/images/galeri-demo-02-min.jpg", alt="Изумруд").main-gallery__img
-                        span.main-gallery__img-name Изумруд 3
+                        figcaption.main-gallery__img-name Изумруд 3
                 .main-gallery-controls
                     img(src="./assets/images/galeri-demo-02-min.jpg", alt="Изумруд").main-gallery-controls__item
                     img(src="./assets/images/galeri-demo-01-min.jpg", alt="Изумруд").main-gallery-controls__item
@@ -80,3 +80,32 @@ block content
             h3 Зависит ли цвет изумруда от месторождения?
             p Всем известно, что зеленый цвет изумруда связан с примесью хрома в нем. Но этот зеленый цвет у камней с того или иного месторождения имеет различные оттенки. Давайте разбираться почему.
             p Все дело в дополнительных примесях, состав и количество которых напрямую зависит от типа месторождения изумруда. Так помимо хромовых центров окраски в изумрудах также могут быть центры двухвалентного железа в разной координации, иногда ванадия и титана, а также дырочные центры О-.
+
+        //- Другие публикации
+        section.other-public
+            .other-public__text-wrap
+                h2.heading-1.other-public__heading Другие публикации
+                a(href="#").button.header__top-button Услуги и цены
+            
+            .other-public__slider-wrap
+                .other-public__slider
+                    .other-public__slider_item
+                        img(src="./assets/images/other-public-01-min.jpg" alt="Индивидуальная упаковка камней").other-public__slider-img
+                        h3.other-public__slider-heading Выездная экспертиза геммолога
+                        p.other-public__slider-text Все, кто когда-либо покупал дорогое ювелирное изделие с драгоценными камнями ...
+                        a(href="#").other-public__slider-linc Читать подробнее
+                    .other-public__slider_item
+                        img(src="./assets/images/other-public-02-min.jpg" alt="Индивидуальная упаковка камней").other-public__slider-img
+                        h3.other-public__slider-heading Полиморфизм в минералах
+                        p.other-public__slider-text Все, кто когда-либо покупал дорогое ювелирное изделие с драгоценными камнями ...
+                        a(href="#").other-public__slider-linc Читать подробнее
+                    .other-public__slider_item
+                        img(src="./assets/images/other-public-03-min.jpg" alt="Индивидуальная упаковка камней").other-public__slider-img
+                        h3.other-public__slider-heading Зависит ли цвет изумруда от месторождения?
+                        p.other-public__slider-text Все, кто когда-либо покупал дорогое ювелирное изделие с драгоценными камнями ...
+                        a(href="#").other-public__slider-linc Читать подробнее
+                    .other-public__slider_item
+                        img(src="./assets/images/other-public-01-min.jpg" alt="Индивидуальная упаковка камней").other-public__slider-img
+                        h3.other-public__slider-heading Выездная экспертиза геммолога
+                        p.other-public__slider-text Все, кто когда-либо покупал дорогое ювелирное изделие с драгоценными камнями ...
+                        a(href="#").other-public__slider-linc Читать подробнее
