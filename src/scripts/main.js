@@ -133,8 +133,13 @@ if (document.querySelector(".faq")) {
 	new Accordion(".faq");
 }
 
-// popup
+// Увеличения картинок
+// https://github.com/francoischalifour/medium-zoom
+mediumZoom("[data-zoomable]", {
+	background: "#d9e2ec",
+});
 
+// popup
 const pooupBut = document.querySelector(".popup-open");
 
 if (pooupBut) {

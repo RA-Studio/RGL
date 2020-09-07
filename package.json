@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "imask": "^6.0.5",
+    "medium-zoom": "^1.0.6",
     "tiny-slider": "^2.9.3"
   }
 }
