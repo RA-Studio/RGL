@@ -68,6 +68,10 @@
 	&::placeholder {
 		color: $color-50;
 	}
+
+	&:focus:placeholder-shown {
+		border: 1px solid $color-green_orig;
+	}
 }
 
 .contact__input_area {

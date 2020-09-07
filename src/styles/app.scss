@@ -40,6 +40,16 @@ $font-Raleway: "Raleway", sans-serif;
 	outline-offset: 4px;
 }
 
+// https://github.com/WICG/focus-visible
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: none;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
 body {
 	overflow-x: hidden;
 	margin: 0;
