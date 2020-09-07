@@ -111,14 +111,36 @@ if (mainGalleryWrap) {
 	}
 }
 
+// Убирает tabIndex у ссылок внутри не активных слайдов
+window.onload = function () {
+	const tnsItem = document.querySelectorAll(".tns-slider .tns-item");
+
+	if (tnsItem) {
+		for (const i of tnsItem) {
+			console.log(i.ariaHidden);
+			if (i.ariaHidden) {
+				const tabs = i.querySelectorAll("a");
+				for (const t of tabs) {
+					t.tabIndex = -1;
+				}
+			}
+		}
+	}
+};
+
 // Аккардион
 if (document.querySelector(".faq")) {
 	new Accordion(".faq");
 }
 
-// popup
+// Увеличения картинок
+// https://github.com/francoischalifour/medium-zoom
+mediumZoom("[data-zoomable]", {
+	background: "#d9e2ec",
+});
 
-const pooupBut = document.querySelector(".calculator__price-button");
+// popup
+const pooupBut = document.querySelector(".popup-open");
 
 if (pooupBut) {
 	const pooupWindow = document.querySelector(".certificate-popup");
