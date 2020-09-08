@@ -1,9 +1,32 @@
 .certificates {
 	width: var(--content-max-weight);
 	padding-top: 48px;
+
+	.card-linc__heading {
+		text-align: center;
+	}
 }
 
 .certificates__heading {
 	margin: 0 0 48px 0;
 	text-align: center;
+}
+
+@media screen and (max-width: 1344px) {
+	.certificates {
+		padding: var(--content-pading);
+		margin-bottom: 64px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.certificates__heading {
+		margin-bottom: 24px;
+	}
+}
+
+@media screen and (max-width: 628px) {
+	.certificates .card-linc__heading {
+		text-align: left;
+	}
 }
