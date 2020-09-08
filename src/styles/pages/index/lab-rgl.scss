@@ -20,3 +20,24 @@
 .lab-rgl__servic-wrap {
 	width: 100%;
 }
+
+@media screen and (max-width: 1344px) {
+	.lab-rgl {
+		padding: var(--content-pading);
+		margin-bottom: 64px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.lab-rgl__heading {
+		margin-bottom: 12px;
+	}
+
+	.lab-rgl__text {
+		margin-bottom: 24px;
+	}
+
+	.card-linc.lab-rgl__servic-wrap {
+		margin-bottom: 24px;
+	}
+}

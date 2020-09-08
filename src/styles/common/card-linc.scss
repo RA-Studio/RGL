@@ -2,6 +2,7 @@
 	display: flex;
 	margin-bottom: 40px;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .card-linc__item {
@@ -69,5 +70,40 @@
 
 	.card-linc__heading {
 		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1110px) {
+	.card-linc__item {
+		margin: 0 10px 26px 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 628px) {
+	.card-linc {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+
+	.card-linc__item {
+		flex-direction: row;
+		width: auto;
+		margin: 0 0 26px 0;
+		padding: 16px;
+	}
+
+	.card-linc__img {
+		margin-bottom: 0;
+		height: 65px;
+		margin-right: 24px;
+	}
+
+	.card-linc__text {
+		display: none;
 	}
 }
