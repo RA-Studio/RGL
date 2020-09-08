@@ -46,7 +46,7 @@ if (document.querySelector(".slider-main")) {
 		items: 1,
 		gutter: 20,
 		mouseDrag: true,
-		// loop: false,
+		// autoHeight: true,
 		speed: 400,
 		controls: false,
 		navPosition: "bottom",
