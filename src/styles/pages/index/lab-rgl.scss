@@ -25,11 +25,14 @@
 @media screen and (max-width: 1344px) {
 	.lab-rgl {
 		padding: var(--content-pading);
-		margin-bottom: 64px;
 	}
 }
 
 @media screen and (max-width: 768px) {
+	.lab-rgl {
+		margin-bottom: 64px;
+	}
+
 	.lab-rgl__heading {
 		margin-bottom: 12px;
 	}

@@ -53,7 +53,6 @@
 @media screen and (max-width: 1344px) {
 	.advantages {
 		width: calc(var(--content-max-weight) - 32px);
-		margin-bottom: 64px;
 	}
 }
 
@@ -65,6 +64,10 @@
 }
 
 @media screen and (max-width: 768px) {
+	.advantages {
+		margin-bottom: 64px;
+	}
+
 	.advantages {
 		padding: 24px;
 	}

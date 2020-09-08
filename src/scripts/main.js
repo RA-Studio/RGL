@@ -56,16 +56,24 @@ if (document.querySelector(".slider-main")) {
 if (document.querySelector(".other-public__slider")) {
 	var injury = tns({
 		container: ".other-public__slider",
-		items: 2,
-		gutter: 64,
+		gutter: 24,
+		items: 1,
 		mouseDrag: true,
 		autoWidth: true,
 		loop: false,
 		speed: 300,
-		// controls: false,
 		controlsText: ["", ""],
 		nav: false,
 		navPosition: "bottom",
+		responsive: {
+			768: {
+				items: 2,
+				gutter: 64,
+			},
+			// 1100: {
+			// 	items: 1,
+			// },
+		},
 	});
 }
 
