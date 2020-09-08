@@ -51,7 +51,7 @@ textarea:focus {
 }
 
 body {
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 	color: $color-text-main;
@@ -64,6 +64,7 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	line-height: 24px;
+	min-width: 320px;
 }
 
 a {
@@ -421,6 +422,14 @@ figure {
 	}
 }
 
+@media screen and (max-width: 1344px) {
+	:root {
+		--content-max-weight: 100%;
+		--content-pading: 0 16px;
+	}
+}
+
+@import "./common/hamburger.scss";
 @import "./common/header.scss";
 @import "./common/bread-crumbs.scss";
 
@@ -430,16 +439,14 @@ figure {
 @import "./pages/index/advantages.scss";
 @import "./pages/index/other-public.scss";
 @import "./pages/index/gem-wiki.scss";
-
 @import "./pages/sertifikatsiya/packaging.scss";
-
 @import "./pages/404.scss";
-
 @import "./pages/faq.scss";
-
 @import "./pages/articles-page.scss";
-
 @import "./pages/site-search.scss";
+@import "./pages/articles/articles.scss";
+@import "./pages/articles/articles-list.scss";
+@import "./pages/conf/conf.scss";
 
 @import "./common/calculator.scss";
 @import "./common/content-block-a.scss";
@@ -447,11 +454,6 @@ figure {
 @import "./common/stages-work.scss";
 @import "./common/contact.scss";
 @import "./common/footer.scss";
-
-@import "./pages/articles/articles.scss";
-@import "./pages/articles/articles-list.scss";
-@import "./pages/conf/conf.scss";
-
 @import "./common/pagination.scss";
 @import "./common/certificate-popup.scss";
 

@@ -1,15 +1,11 @@
 // Бургер меню
-// const burgerButton = document.querySelectorAll(".main-manu__burger-button");
-// const burgerManu = document.querySelector(".burger-manu");
+const burgerButton = document.querySelector(".header__top-burger");
+const burgerManu = document.querySelector(".header__bot");
 
-// for (const i of burgerButton) {
-// 	i.addEventListener("click", () => {
-// 		burgerManu.classList.toggle("burger-manu__is-active");
-// 		for (const b of burgerButton) {
-// 			b.classList.toggle("main-manu__burger-button-cross");
-// 		}
-// 	});
-// }
+burgerButton.addEventListener("click", () => {
+	burgerManu.classList.toggle("is-active");
+	burgerButton.classList.toggle("is-active");
+});
 
 // Табы
 const tabsButton = document.querySelectorAll(".stages-work__button");
