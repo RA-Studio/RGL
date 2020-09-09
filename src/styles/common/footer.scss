@@ -1,8 +1,8 @@
 .footer {
 	position: relative;
+	z-index: 2;
 	overflow: hidden;
 	padding: 40px 0;
-	z-index: 2;
 
 	&::before {
 		position: absolute;
@@ -36,10 +36,57 @@
 	flex-wrap: wrap;
 }
 
+.footer__accordion,
 .footer__manu-wrap {
 	display: flex;
 	flex-basis: 530px;
 	justify-content: space-between;
+}
+
+.footer__accordion {
+	display: none;
+	flex-direction: column;
+
+	.footer__manu {
+		padding: 8px 0;
+		border-bottom: 1px solid $color-light_viol;
+
+		&:first-child {
+			border-top: 1px solid $color-light_viol;
+		}
+	}
+
+	.footer__manu-head {
+		position: relative;
+		display: flex;
+		margin-bottom: 0;
+		align-items: center;
+
+		&::after {
+			position: absolute;
+			right: 0;
+			width: 12px;
+			height: 12px;
+			content: "";
+			transition: transform 250ms ease-in-out 0ms;
+			transform: rotate(90deg);
+			background-color: $color-text-main;
+			mask: url(../images/icons/icon-angle-min.svg) no-repeat center;
+		}
+	}
+
+	.footer__manu.is-active .footer__manu-head::after {
+		transform: rotate(-90deg);
+	}
+
+	.footer__manu-list {
+		margin-top: 8px;
+	}
+}
+
+.footer__manu {
+	border: none;
+	background-color: transparent;
 }
 
 .footer__manu-list {
@@ -58,6 +105,7 @@
 }
 
 .footer__manu-head {
+	margin: 0 0 8px 0;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16px;
@@ -98,6 +146,7 @@
 	display: flex;
 	width: 100%;
 	margin-top: 28px;
+	flex-wrap: wrap;
 
 	span {
 		margin-right: 146px;
@@ -112,4 +161,61 @@
 
 a:hover.footer__bot-item {
 	color: $color-text-main;
+}
+
+@media screen and (max-width: 1344px) {
+	.footer__wrap {
+		padding: var(--content-pading);
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.footer__logo {
+		margin-bottom: 24px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.footer__manu-wrap {
+		display: none;
+	}
+
+	.footer__accordion {
+		display: flex;
+		flex-basis: 50%;
+	}
+
+	.footer__bot {
+		justify-content: space-between;
+	}
+
+	.footer__bot span {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+	.footer__logo-img {
+		width: 138px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.footer__info-wrap {
+		flex-direction: column;
+	}
+
+	.footer__accordion {
+		width: 100%;
+		margin-bottom: 24px;
+	}
+
+	.footer__bot span {
+		margin-bottom: 12px;
+	}
 }

@@ -137,6 +137,10 @@ if (document.querySelector(".faq")) {
 	new Accordion(".faq");
 }
 
+if (document.querySelector(".footer__accordion")) {
+	new Accordion(".footer__accordion");
+}
+
 // Увеличения картинок
 // https://github.com/francoischalifour/medium-zoom
 mediumZoom("[data-zoomable]", {
