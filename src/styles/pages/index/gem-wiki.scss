@@ -51,3 +51,38 @@
 	font-weight: 600;
 	line-height: 24px;
 }
+
+@media screen and (max-width: 1344px) {
+	.gem-wiki {
+		padding: var(--content-pading);
+	}
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+	.gem-wiki {
+		margin-bottom: 64px;
+	}
+
+	.gem-wiki__heading {
+		margin-bottom: 24px;
+	}
+
+	.gem-wiki__slider-linc {
+		width: 145px;
+		padding: 12px;
+	}
+
+	.gem-wiki__slider-img {
+		width: 94px;
+		margin-bottom: 6px;
+	}
+
+	.gem-wiki__slider-text {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}

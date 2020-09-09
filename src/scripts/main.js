@@ -70,9 +70,6 @@ if (document.querySelector(".other-public__slider")) {
 				items: 2,
 				gutter: 64,
 			},
-			// 1100: {
-			// 	items: 1,
-			// },
 		},
 	});
 }
@@ -81,15 +78,18 @@ if (document.querySelector(".gem-wiki__slider")) {
 	var injury = tns({
 		container: ".gem-wiki__slider",
 		items: 3,
-		gutter: 32,
+		gutter: 16,
 		mouseDrag: true,
 		autoWidth: true,
 		loop: false,
 		speed: 250,
 		controls: false,
-		// controlsText: ["", ""],
 		nav: false,
-		// navPosition: "bottom",
+		responsive: {
+			768: {
+				gutter: 32,
+			},
+		},
 	});
 }
 
