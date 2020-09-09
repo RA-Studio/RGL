@@ -27,9 +27,17 @@
           </div>
           <button class="button header__top-button" type="submit">Заказать экспертизу</button>
         </div>
+        <button class="hamburger hamburger--spin header__top-burger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
       </div>
       <div class="header__line"></div>
       <div class="header__bot">
+        <div class="header__bot-tel-bott-wrap">
+          <div class="header__top-tel-wrap"><a class="header__top-tel" href="tel:+74952314512">+7 495 231 45 12</a>
+            <div class="header__top-visit-time"><span class="header__top-days">Пн–пт с </span><span class="header__top-time">10:00 до 20:00</span></div>
+          </div>
+          <button class="button header__top-button" type="submit">Заказать экспертизу</button>
+        </div>
+        <div class="header__line"></div>
         <nav class="main-manu header__bot-main-manu">
           <ul class="main-manu__list">
             <li class="main-manu__item"><a class="main-manu__linc" href="http://">Сертификация</a></li>
@@ -111,9 +119,9 @@
       <section class="certificates">
         <h2 class="heading-1 certificates__heading">Виды сертификации</h2>
         <div class="card-linc"><a class="card-linc__item" href="#"><img class="card-linc__img" src="./assets/images/cert-diamond-min.png" srcset="assets/images/cert-diamond@2x-min.png 2x" alt="Виды сертификации на бриллианты">
-            <h4 class="card-linc__heading text_center">Бриллианты</h4></a><a class="card-linc__item" href="#"><img class="card-linc__img" src="./assets/images/cert-ring-min.png" srcset="assets/images/cert-ring@2x-min.png 2x" alt="Виды сертификации на ювелирные изделия">
-            <h4 class="card-linc__heading text_center">Ювелирные изделия</h4></a><a class="card-linc__item" href="#"><img class="card-linc__img" src="./assets/images/cert-mineral-min.png" srcset="assets/images/cert-mineral@2x-min.png 2x" alt="Виды сертификации на драгоценные камни">
-            <h4 class="card-linc__heading text_center">Драгоценные камни</h4></a></div>
+            <h4 class="card-linc__heading">Бриллианты</h4></a><a class="card-linc__item" href="#"><img class="card-linc__img" src="./assets/images/cert-ring-min.png" srcset="assets/images/cert-ring@2x-min.png 2x" alt="Виды сертификации на ювелирные изделия">
+            <h4 class="card-linc__heading">Ювелирные изделия</h4></a><a class="card-linc__item" href="#"><img class="card-linc__img" src="./assets/images/cert-mineral-min.png" srcset="assets/images/cert-mineral@2x-min.png 2x" alt="Виды сертификации на драгоценные камни">
+            <h4 class="card-linc__heading">Драгоценные камни</h4></a></div>
       </section>
       <article class="stages-work-wrap">
         <div class="stages-work">
@@ -141,27 +149,6 @@
         </div>
       </article>
     </main>
-    <div class="certificate-popup">
-      <div class="certificate-popup__fade">
-        <section class="contact certificate-popup__wrap">
-          <div class="contact__form-wrap">
-            <h1 class="heading-1 contact__heading">Заказать сертификат</h1>
-            <p class="contact__text">Заполните форму, и мы вам перезвоним<br> в ближайшее время</p>
-            <form class="contact__form" action="">
-              <label class="contact__input-wrap">Ваше имя <span>*</span>
-                <input class="contact__input" type="text" name="userName" placeholder="Имя" required id="userName">
-              </label>
-              <label class="contact__input-wrap">Номер телефона <span>*</span>
-                <input class="contact__input phone-mask" type="tel" name="userPhone" placeholder="Телефон" min="1" required id="userPhone">
-              </label>
-              <button class="button contact__button" type="submit">Перезвоните мне</button>
-              <p class="contact__text-conf">Нажимая на кнопку, вы соглашаетесь<br> с <a href="#">политикой конфиденциальности сайта</a></p>
-            </form>
-            <button class="certificate-popup--close popup--close" type="button" aria-label="Закрыть окно"></button>
-          </div>
-        </section>
-      </div>
-    </div>
     <section class="contact">
       <div class="contact_wrap">
         <div class="contact__form-wrap">
@@ -182,8 +169,8 @@
           </form>
         </div>
         <div class="contact__map-wrap">
-          <div class="contact__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8757dd87a4819217f7069219d3da16e094a5da6ad90b4a634a1a949107f7a2f0&amp;width=720&amp;height=448&amp;lang=ru_RU&amp;scroll=false"></script></div>
-          <div class="contact__adres-wrap"><a class="contact__adres-item" href="#">Москва, ул. Нагатинская, д. 5<img class="contact__adres-item-icon" src="./assets/images/icons/icon-point-min.svg" alt=""></a><span class="contact__adres-item">Пн–пт с 10:00 до 20:00<img class="contact__adres-item-icon" src="./assets/images/icons/icon-time-min.svg" alt=""></span><a class="contact__adres-item" href="tel:+74952314512">+7 495 231 45 12<img class="contact__adres-item-icon" src="./assets/images/icons/icon-pone-min.svg" alt=""></a></div>
+          <div class="contact__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8757dd87a4819217f7069219d3da16e094a5da6ad90b4a634a1a949107f7a2f0&amp;lang=ru_RU&amp;scroll=false"></script></div>
+          <div class="contact__adres-wrap"><a class="contact__adres-item" href="#">Москва, ул. Нагатинская, д. 5<img class="contact__adres-item-icon" src="./assets/images/icons/icon-point-min.svg" alt=""></a><span class="contact__adres-item">Пн–пт с 10:00 до 20:00<img class="contact__adres-item-icon" src="./assets/images/icons/icon-time-min.svg" alt=""></span><a class="contact__adres-item contact__adres-item-tel" href="tel:+74952314512">+7 495 231 45 12<img class="contact__adres-item-icon" src="./assets/images/icons/icon-pone-min.svg" alt=""></a></div>
         </div>
       </div>
     </section>
@@ -192,24 +179,49 @@
         <div class="footer__info-wrap">
           <div class="footer__manu-wrap">
             <nav class="footer__manu">
+              <h5 class="footer__manu-head"> Сертификация</h5>
               <ul class="footer__manu-list">
-                <li class="footer__manu-item"> <span class="footer__manu-head">Сертификация</span></li>
                 <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Бриллиантов</a></li>
                 <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Ювелирных изделий</a></li>
                 <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Драгоценных камней</a></li>
               </ul>
             </nav>
             <nav class="footer__manu">
+              <h5 class="footer__manu-head"> О нас</h5>
               <ul class="footer__manu-list">
-                <li class="footer__manu-item"><span class="footer__manu-head">О нас</span></li>
                 <li class="footer__manu-item"><a class="footer__manu-linc" href="#">О компании</a></li>
                 <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Услуги и цены</a></li>
                 <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Контакты</a></li>
               </ul>
             </nav>
             <nav class="footer__manu">
+              <h5 class="footer__manu-head"> Информация</h5>
               <ul class="footer__manu-list">
-                <li class="footer__manu-item"><span class="footer__manu-head">Информация</span></li>
+                <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Статьи</a></li>
+                <li class="footer__manu-item"><a class="footer__manu-linc" href="#">FAQ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__accordion">
+            <nav class="footer__manu ac">
+              <h5 class="footer__manu-head ac-q"> Сертификация</h5>
+              <ul class="footer__manu-list ac-a">
+                <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Бриллиантов</a></li>
+                <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Ювелирных изделий</a></li>
+                <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Драгоценных камней</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__manu ac">
+              <h5 class="footer__manu-head ac-q"> О нас</h5>
+              <ul class="footer__manu-list ac-a">
+                <li class="footer__manu-item"><a class="footer__manu-linc" href="#">О компании</a></li>
+                <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Услуги и цены</a></li>
+                <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__manu ac">
+              <h5 class="footer__manu-head ac-q"> Информация</h5>
+              <ul class="footer__manu-list ac-a">
                 <li class="footer__manu-item"><a class="footer__manu-linc" href="#">Статьи</a></li>
                 <li class="footer__manu-item"><a class="footer__manu-linc" href="#">FAQ</a></li>
               </ul>

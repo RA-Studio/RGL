@@ -1,15 +1,11 @@
 // Бургер меню
-// const burgerButton = document.querySelectorAll(".main-manu__burger-button");
-// const burgerManu = document.querySelector(".burger-manu");
+const burgerButton = document.querySelector(".header__top-burger");
+const burgerManu = document.querySelector(".header__bot");
 
-// for (const i of burgerButton) {
-// 	i.addEventListener("click", () => {
-// 		burgerManu.classList.toggle("burger-manu__is-active");
-// 		for (const b of burgerButton) {
-// 			b.classList.toggle("main-manu__burger-button-cross");
-// 		}
-// 	});
-// }
+burgerButton.addEventListener("click", () => {
+	burgerManu.classList.toggle("is-active");
+	burgerButton.classList.toggle("is-active");
+});
 
 // Табы
 const tabsButton = document.querySelectorAll(".stages-work__button");
@@ -50,7 +46,7 @@ if (document.querySelector(".slider-main")) {
 		items: 1,
 		gutter: 20,
 		mouseDrag: true,
-		// loop: false,
+		// autoHeight: true,
 		speed: 400,
 		controls: false,
 		navPosition: "bottom",
@@ -60,16 +56,21 @@ if (document.querySelector(".slider-main")) {
 if (document.querySelector(".other-public__slider")) {
 	var injury = tns({
 		container: ".other-public__slider",
-		items: 2,
-		gutter: 64,
+		gutter: 24,
+		items: 1,
 		mouseDrag: true,
 		autoWidth: true,
 		loop: false,
 		speed: 300,
-		// controls: false,
 		controlsText: ["", ""],
 		nav: false,
 		navPosition: "bottom",
+		responsive: {
+			768: {
+				items: 2,
+				gutter: 64,
+			},
+		},
 	});
 }
 
@@ -77,15 +78,18 @@ if (document.querySelector(".gem-wiki__slider")) {
 	var injury = tns({
 		container: ".gem-wiki__slider",
 		items: 3,
-		gutter: 32,
+		gutter: 16,
 		mouseDrag: true,
 		autoWidth: true,
 		loop: false,
 		speed: 250,
 		controls: false,
-		// controlsText: ["", ""],
 		nav: false,
-		// navPosition: "bottom",
+		responsive: {
+			768: {
+				gutter: 32,
+			},
+		},
 	});
 }
 
@@ -131,6 +135,10 @@ window.onload = function () {
 // Аккардион
 if (document.querySelector(".faq")) {
 	new Accordion(".faq");
+}
+
+if (document.querySelector(".footer__accordion")) {
+	new Accordion(".footer__accordion");
 }
 
 // Увеличения картинок
