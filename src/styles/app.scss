@@ -338,6 +338,7 @@ figure {
 	background-color: transparent;
 
 	&:hover {
+		color: $color-neutral;
 		border-color: $color-light_viol;
 		background-color: transparentize($color-light_viol, 0.6);
 	}
@@ -455,6 +456,10 @@ figure {
 		font-size: 18px;
 		font-weight: 600;
 		line-height: 24px;
+	}
+
+	.heading-under-bread-crumbs {
+		margin-top: 0;
 	}
 }
 

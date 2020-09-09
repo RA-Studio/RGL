@@ -45,3 +45,15 @@
 		color: $color-text-main;
 	}
 }
+
+@media screen and (max-width: 960px) {
+	.bread-crumbs {
+		margin-top: 26px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.bread-crumbs {
+		display: none;
+	}
+}
