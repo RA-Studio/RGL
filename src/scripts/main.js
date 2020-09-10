@@ -156,15 +156,24 @@ mediumZoom("[data-zoomable]", {
 });
 
 // popup
-const pooupBut = document.querySelector(".popup-open");
+const pooupBut = document.querySelectorAll(".popup-open");
 
 if (pooupBut) {
 	const pooupWindow = document.querySelector(".certificate-popup");
 	const pooupClose = document.querySelector(".popup--close");
-	pooupBut.addEventListener("click", () => {
-		pooupWindow.classList.add("certificate-popup-active");
-	});
+	const pooupCloseArea = document.querySelector(".popup--close-area");
+
+	for (const i of pooupBut) {
+		i.addEventListener("click", () => {
+			pooupWindow.classList.add("certificate-popup-active");
+		});
+	}
+
 	pooupClose.addEventListener("click", () => {
+		pooupWindow.classList.remove("certificate-popup-active");
+	});
+
+	pooupCloseArea.addEventListener("click", () => {
 		pooupWindow.classList.remove("certificate-popup-active");
 	});
 }

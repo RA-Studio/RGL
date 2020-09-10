@@ -1,8 +1,8 @@
 .certificate-popup
     .certificate-popup__fade
-        section.contact.certificate-popup__wrap
+        .contact.certificate-popup__wrap
             .contact__form-wrap
-                h1.heading-1.contact__heading Заказать сертификат
+                h1.heading-1.contact__heading.popup-open Заказать сертификат
                 p.contact__text Заполните форму, и мы вам перезвоним<br> в ближайшее время
                 form(action="").contact__form
                     label.contact__input-wrap Ваше имя 
@@ -15,4 +15,5 @@
                     button(type="submit").button.contact__button Перезвоните мне
                     p.contact__text-conf Нажимая на кнопку, вы соглашаетесь<br> с 
                         a(href="#") политикой конфиденциальности сайта
-                button(type="button" aria-label="Закрыть окно").certificate-popup--close.popup--close
+            button(type="button" aria-label="Закрыть окно").certificate-popup--close.popup--close
+        .popup--close-area
