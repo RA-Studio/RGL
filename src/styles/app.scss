@@ -460,6 +460,7 @@ figure {
 
 	.heading-under-bread-crumbs {
 		margin-top: 0;
+		margin-bottom: 16px;
 	}
 }
 
@@ -493,10 +494,6 @@ figure {
 
 .color_green_blend {
 	color: $color-green_blend;
-}
-
-.order-3 {
-	order: 3;
 }
 
 // @media screen and (max-width: 1344px) {
