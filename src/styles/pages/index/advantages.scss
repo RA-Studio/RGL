@@ -20,7 +20,6 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-basis: 100%;
-	margin-bottom: 48px;
 }
 
 .advantages__item {
@@ -28,17 +27,9 @@
 	flex-direction: column;
 	width: 316px;
 	margin-right: 50px;
-	margin-left: 50px;
 	margin-bottom: 48px;
+	margin-left: 50px;
 	align-items: center;
-
-	&:nth-last-of-type(2) {
-		margin-bottom: 0;
-	}
-
-	&:last-child {
-		margin-bottom: 0;
-	}
 }
 
 .advantages__item-icon {
@@ -76,14 +67,10 @@
 		margin-bottom: 28px;
 	}
 
-	.advantages__wrap {
-		margin-bottom: 40px;
-	}
-
 	.advantages__item {
-		margin-right: 0;
-		margin-left: 0;
 		width: 100%;
 		max-width: 360px;
+		margin-right: 0;
+		margin-left: 0;
 	}
 }
