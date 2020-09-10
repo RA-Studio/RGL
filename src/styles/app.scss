@@ -507,6 +507,16 @@ figure {
 	color: $color-green_blend;
 }
 
+.heading-under-bread-crumbs.kontakt__heading {
+	margin-bottom: 64px;
+}
+
+@media screen and (max-width: 768px) {
+	.heading-under-bread-crumbs.kontakt__heading {
+		margin-bottom: 24px;
+	}
+}
+
 // @media screen and (max-width: 1344px) {
 // 	.header__bot {
 // 		padding: var(--content-pading);
