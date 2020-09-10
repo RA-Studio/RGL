@@ -159,9 +159,9 @@ mediumZoom("[data-zoomable]", {
 const pooupBut = document.querySelectorAll(".popup-open");
 
 if (pooupBut) {
-	const pooupWindow = document.querySelector(".certificate-popup");
-	const pooupClose = document.querySelector(".popup--close");
-	const pooupCloseArea = document.querySelector(".popup--close-area");
+	const pooupWindow = document.querySelector(".certificate-popup"),
+		pooupClose = document.querySelector(".popup--close"),
+		pooupCloseArea = document.querySelector(".popup--close-area");
 
 	for (const i of pooupBut) {
 		i.addEventListener("click", () => {
@@ -175,5 +175,15 @@ if (pooupBut) {
 
 	pooupCloseArea.addEventListener("click", () => {
 		pooupWindow.classList.remove("certificate-popup-active");
+	});
+}
+
+// cookies close
+const cookiesBlock = document.querySelector(".cookies"),
+	cookiesClose = document.querySelector(".cookies__close");
+
+if (cookiesBlock) {
+	cookiesClose.addEventListener("click", () => {
+		cookiesBlock.classList.add("cookies__close-none");
 	});
 }
