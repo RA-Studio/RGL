@@ -25,7 +25,7 @@
           <div class="header__top-tel-wrap"><a class="header__top-tel" href="tel:+74952314512">+7 495 231 45 12</a>
             <div class="header__top-visit-time"><span class="header__top-days">Пн–пт с </span><span class="header__top-time">10:00 до 20:00</span></div>
           </div>
-          <button class="button header__top-button" type="submit">Заказать экспертизу</button>
+          <button class="button header__top-button popup-open"> Заказать экспертизу</button>
         </div>
         <button class="hamburger hamburger--spin header__top-burger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
       </div>
@@ -35,7 +35,7 @@
           <div class="header__top-tel-wrap"><a class="header__top-tel" href="tel:+74952314512">+7 495 231 45 12</a>
             <div class="header__top-visit-time"><span class="header__top-days">Пн–пт с </span><span class="header__top-time">10:00 до 20:00</span></div>
           </div>
-          <button class="button header__top-button" type="submit">Заказать экспертизу</button>
+          <button class="button header__top-button popup-open" type="submit">Заказать экспертизу</button>
         </div>
         <div class="header__line"></div>
         <nav class="main-manu header__bot-main-manu">
@@ -226,9 +226,9 @@
     </footer>
     <div class="certificate-popup">
       <div class="certificate-popup__fade">
-        <section class="contact certificate-popup__wrap">
+        <div class="contact certificate-popup__wrap">
           <div class="contact__form-wrap">
-            <h1 class="heading-1 contact__heading">Заказать сертификат</h1>
+            <h1 class="heading-1 contact__heading popup-open">Заказать сертификат</h1>
             <p class="contact__text">Заполните форму, и мы вам перезвоним<br> в ближайшее время</p>
             <form class="contact__form" action="">
               <label class="contact__input-wrap">Ваше имя <span>*</span>
@@ -240,9 +240,10 @@
               <button class="button contact__button" type="submit">Перезвоните мне</button>
               <p class="contact__text-conf">Нажимая на кнопку, вы соглашаетесь<br> с <a href="#">политикой конфиденциальности сайта</a></p>
             </form>
-            <button class="certificate-popup--close popup--close" type="button" aria-label="Закрыть окно"></button>
           </div>
-        </section>
+          <button class="certificate-popup--close popup--close" type="button" aria-label="Закрыть окно"></button>
+        </div>
+        <div class="popup--close-area"></div>
       </div>
     </div>
     <script src="assets/scripts/imask.min.js"></script>

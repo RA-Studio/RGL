@@ -9,21 +9,29 @@ burgerButton.addEventListener("click", () => {
 
 // Табы
 const tabsButton = document.querySelectorAll(".stages-work__button");
-const tabsContainer = document.querySelectorAll(".stages-work__tabs-item");
+const tabsContainerSW = document.querySelectorAll(".stages-work__tabs-item");
 
-for (const i of tabsButton) {
-	i.addEventListener("click", () => {
-		for (const b of tabsButton) {
-			b.classList.add("button_hgost-neutral");
-		}
-		i.classList.remove("button_hgost-neutral");
+const tabsButtonCalc = document.querySelectorAll(".calculator__head-booton");
+const tabsContainerCalc = document.querySelectorAll(".calculator__body");
 
-		for (const c of tabsContainer) {
-			c.classList.remove("tab-container-active");
-		}
-		document.querySelector("#" + i.value).classList.add("tab-container-active");
-	});
+function mainTab(tabsButton, tabsContainer) {
+	for (const i of tabsButton) {
+		i.addEventListener("click", () => {
+			for (const b of tabsButton) {
+				b.classList.add("button_hgost-neutral");
+			}
+			i.classList.remove("button_hgost-neutral");
+
+			for (const c of tabsContainer) {
+				c.classList.remove("tab-container-active");
+			}
+			document.querySelector("#" + i.value).classList.add("tab-container-active");
+		});
+	}
 }
+
+mainTab(tabsButton, tabsContainerSW);
+mainTab(tabsButtonCalc, tabsContainerCalc);
 
 // Маска для телефона
 document.querySelectorAll(".phone-mask").forEach((item) => {
@@ -148,15 +156,24 @@ mediumZoom("[data-zoomable]", {
 });
 
 // popup
-const pooupBut = document.querySelector(".popup-open");
+const pooupBut = document.querySelectorAll(".popup-open");
 
 if (pooupBut) {
 	const pooupWindow = document.querySelector(".certificate-popup");
 	const pooupClose = document.querySelector(".popup--close");
-	pooupBut.addEventListener("click", () => {
-		pooupWindow.classList.add("certificate-popup-active");
-	});
+	const pooupCloseArea = document.querySelector(".popup--close-area");
+
+	for (const i of pooupBut) {
+		i.addEventListener("click", () => {
+			pooupWindow.classList.add("certificate-popup-active");
+		});
+	}
+
 	pooupClose.addEventListener("click", () => {
+		pooupWindow.classList.remove("certificate-popup-active");
+	});
+
+	pooupCloseArea.addEventListener("click", () => {
 		pooupWindow.classList.remove("certificate-popup-active");
 	});
 }
