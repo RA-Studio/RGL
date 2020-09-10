@@ -445,22 +445,33 @@ figure {
 
 	.heading-2,
 	h2 {
-		font-family: $font-Raleway;
 		font-weight: 600;
-		font-size: 32px;
-		line-height: 40px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.heading-3,
+	h3 {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
 	}
 
 	.heading-4,
 	h4 {
-		font-size: 18px;
 		font-weight: 600;
+		font-size: 16px;
 		line-height: 24px;
 	}
 
 	.heading-under-bread-crumbs {
 		margin-top: 0;
 		margin-bottom: 16px;
+	}
+
+	th,
+	td {
+		padding: 8px 6px;
 	}
 }
 
