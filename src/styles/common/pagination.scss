@@ -4,7 +4,6 @@
 }
 
 .pagination__list {
-	width: 300px;
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
@@ -14,6 +13,11 @@
 
 .pagination__item {
 	display: flex;
+	margin-right: 12px;
+
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 .pagination__link,

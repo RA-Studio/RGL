@@ -51,6 +51,7 @@ textarea:focus {
 }
 
 body {
+	min-width: 320px;
 	// overflow-x: hidden;
 	margin: 0;
 	padding: 0;
@@ -64,7 +65,6 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	line-height: 24px;
-	min-width: 320px;
 }
 
 a {
@@ -98,8 +98,8 @@ h1 {
 .heading-2,
 h2 {
 	font-family: $font-Raleway;
-	font-weight: 600;
 	font-size: 32px;
+	font-weight: 600;
 	line-height: 40px;
 }
 
@@ -210,10 +210,10 @@ figure {
 	.input {
 		z-index: 2;
 		display: block;
+		width: 100%;
 		border-left: none;
 		border-radius: 0 5px 5px 0;
 		flex-basis: 100%;
-		width: 100%;
 
 		&:focus ~ label {
 			border-color: $color-neutral;
@@ -295,9 +295,9 @@ figure {
 
 	&:hover {
 		text-decoration: none;
+		color: $color-wheat;
 		border-color: $color-green_orig-hover;
 		background-color: $color-green_orig-hover;
-		color: $color-wheat;
 	}
 }
 
@@ -314,9 +314,9 @@ figure {
 	background-color: transparent;
 
 	&:hover {
+		color: $color-wheat;
 		border-color: $color-green_blend;
 		background-color: $color-green_blend;
-		color: $color-wheat;
 	}
 }
 
@@ -326,9 +326,9 @@ figure {
 	background-color: transparent;
 
 	&:hover {
+		color: $color-wheat;
 		border-color: $color-green_orig;
 		background-color: $color-green_orig;
-		color: $color-wheat;
 	}
 }
 
@@ -426,26 +426,26 @@ figure {
 
 .cookies {
 	position: fixed;
+	z-index: 2;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: $color-green_orig;
-
-	padding: 10px 16px;
 	display: flex;
+	padding: 10px 16px;
+	background-color: $color-green_orig;
 	align-items: center;
 	justify-content: center;
 }
 
 .cookies__wrap {
-	width: var(--content-max-weight);
 	display: flex;
+	width: var(--content-max-weight);
+	color: $color-wheat;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 16px;
 	align-items: center;
 	justify-content: center;
-	color: $color-wheat;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 16px;
 
 	a {
 		color: $color-wheat;
@@ -458,23 +458,23 @@ figure {
 }
 
 .cookies__close {
-	width: 20px;
-	height: 20px;
-	border: 1px solid $color-wheat;
-	background-color: transparent;
 	position: relative;
 	display: flex;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	transform: rotate(45deg);
+	border: 1px solid $color-wheat;
+	border-radius: 10px;
+	background-color: transparent;
 	align-items: center;
 	justify-content: center;
-	transform: rotate(45deg);
-	cursor: pointer;
-	border-radius: 10px;
 	flex-shrink: 0;
 
 	&::before,
 	&::after {
-		content: "";
 		position: absolute;
+		content: "";
 		background-color: $color-wheat;
 	}
 
@@ -514,22 +514,22 @@ figure {
 
 	.heading-2,
 	h2 {
-		font-weight: 600;
 		font-size: 18px;
+		font-weight: 600;
 		line-height: 24px;
 	}
 
 	.heading-3,
 	h3 {
-		font-weight: 600;
 		font-size: 16px;
+		font-weight: 600;
 		line-height: 24px;
 	}
 
 	.heading-4,
 	h4 {
-		font-weight: 600;
 		font-size: 16px;
+		font-weight: 600;
 		line-height: 24px;
 	}
 
@@ -578,6 +578,10 @@ figure {
 
 .heading-under-bread-crumbs.kontakt__heading {
 	margin-bottom: 64px;
+}
+
+.bread-crumbs__custom {
+	display: none;
 }
 
 @media screen and (max-width: 768px) {
