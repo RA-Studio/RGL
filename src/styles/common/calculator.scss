@@ -42,6 +42,7 @@
 	background-color: $color-wheat;
 	position: relative;
 	margin-bottom: 30px;
+	align-items: flex-start;
 }
 
 .calculator__buttom-add-gem {
@@ -82,7 +83,7 @@
 }
 
 .calculator__main-wrap {
-	flex-basis: 100%;
+	width: 100%;
 }
 
 .calculator__main {
@@ -327,13 +328,25 @@
 }
 
 .calculator__price-wrap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: max-content;
+}
+
+.calculator__price {
 	padding: 24px 32px 26px 32px;
 	border-radius: 5px;
 	box-shadow: 1px 2px 10px rgba(16, 42, 67, 0.1);
-	width: 370px;
-	position: absolute;
-	bottom: 28px;
-	right: 48px;
+	width: 360px;
+	position: sticky;
+	top: calc(100vh - 270px);
+	margin: 140px 48px 28px;
+}
+
+.calculator__price-mt {
+	margin-top: 200px;
 }
 
 .calculator__price-text-wrap {
@@ -418,17 +431,13 @@
 }
 
 @media screen and (max-width: 1040px) {
-	.calculator__body {
-		flex-direction: column;
-	}
-
-	// .calculator__main {
-	// 	width: 100%;
-	// 	flex-basis: auto;
-	// }
 }
 
 @media screen and (max-width: 960px) {
+	.calculator__body {
+		flex-direction: column;
+		align-items: stretch;
+	}
 	.calculator__main:first-child .calculator__main-body,
 	.calculator__main {
 		width: 100%;
@@ -438,6 +447,11 @@
 		position: static;
 		margin: 28px 40px;
 		width: auto;
+	}
+
+	.calculator__price {
+		margin: 0;
+		width: 100%;
 	}
 }
 
