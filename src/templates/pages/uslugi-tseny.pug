@@ -12,41 +12,34 @@ block content
 
         .calculator
             .calculator__head
-                h2.heading-2.calculator__head-heading Сертификация
+                h2.heading-2.calculator__head-heading Сертификация и экспертное заключение
                 .calculator__head-booton-wrap
                         button(value="tab-calc-1").button.calculator__head-booton Бриллианты
                         button(value="tab-calc-2").button.button_hgost-neutral.calculator__head-booton Ювелирные изделия
                         button(value="tab-calc-3").button.button_hgost-neutral.calculator__head-booton Драгоценные камни
             
             .calculator__body#tab-calc-1.tab-container-active
-                .calculator__tab-wrap
-                    botton.calculator__tab-item
-                        img(src="./assets/images/calculator-rect-min.png", srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Бесцветные бриллианты").calculator__tab-img
-                        span.calculator__tab-text Бесцветные бриллианты
-                    botton.calculator__tab-item.calculator__tab-activ
-                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты").calculator__tab-img
-                        span.calculator__tab-text Цветные бриллианты
-
-                .calculator__main
-                    .calculator__main-head
-                        .calculator__main-name
-                            img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты").calculator__main-name-img
-                            h4.calculator__main-name-text Цветные бриллианты
+                .calculator__main-wrap
+                    .calculator__main
+                        .calculator__main-head
+                            .calculator__radio-diamond-wrap.calculator__radio-diamond-wrap_few-item
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name1" checked)#radio-diamond10.calculator__radio-diamond-input
+                                    label(for="radio-diamond10").calculator__radio-diamond-label Бесцветные бриллианты
+                                        img(src="./assets/images/calculator-rect-min.png", srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Бесцветные бриллианты").calculator__radio-diamond-img
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name1")#radio-diamond20.calculator__radio-diamond-input
+                                    label(for="radio-diamond20").calculator__radio-diamond-label Цветные бриллианты
+                                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты").calculator__radio-diamond-img
                         
-                        .input_select.calculator__main-head-input
-                            select(placeholder="Название камня").input
-                                option(value="1") Название камня 1
-                                option(value="2") Название камня 2
-                                option(value="3") Название камня 3
-                    
-                    .calculator__main-body
-                        .calculator__tuning-wrap
+                        .calculator__main-body
+                            span.calculator__main-body-name Основной камень
                             .calculator__tuning-item
                                 .calculator__tuning-karat
                                     span.calculator__tuning-karat-name Масса, кар.
-                                    input(type="text" value="0.8").calculator__tuning-karat-number
+                                    span.calculator__tuning-karat-number 0.8
                                 .calculator__tuning-input-wrap
-                                    input(type="range" min="0.05" max="15" step="0.01" value="0.8").calculator__tuning-input
+                                    input(type="range" min="1" max="15" step="1" value="4").calculator__tuning-input
                                     .calculator__tuning-input-max-min
                                         span 0.05
                                         spna +15
@@ -54,120 +47,188 @@ block content
                             .calculator__radio-wrap
                                 .calculator__radio-label
                                     input(type="radio", name="calculator1")#rb11.calculator__radio
-                                    label(for="rb11").calculator__radio-text Экспертное заключение
+                                    label(for="rb11").calculator__radio-text Экспертное заключение или сертификат соответствия
                                 .calculator__radio-label
                                     input(type="radio", name="calculator1" checked)#rb21.calculator__radio
                                     label(for="rb21").calculator__radio-text Экспресс-диагностика
                                         span.calculator__radio-text-b Без выдачи экспертного заключения
 
-                        .calculator__price-wrap
+                .calculator__price-wrap
                             .calculator__price-text-wrap
                                 span.calculator__price-text Общая стоимость
                                 .calculator__price-number-wrap
-                                    span.calculator__price-number 1 700 
+                                    span.calculator__price-number.color_green_blend 1 600 
                                         spna.calculator__price-rub руб.
+                                    span.calculator__price-old 1 700 
+                                        span.calculator__price-old-rub руб.
                             
                             .calculator__price-button-wrap
                                 button.button.calculator__price-button.popup-open Заказать сертификат
                                 a(href="#").calculator__price-linc Пример
 
             .calculator__body#tab-calc-2
-                .calculator__tab-wrap
-                    botton.calculator__tab-item
-                        img(src="./assets/images/calculator-rect-min.png", srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Бесцветные бриллианты").calculator__tab-img
-                        span.calculator__tab-text Бесцветные бриллианты
-                    botton.calculator__tab-item.calculator__tab-activ
-                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты").calculator__tab-img
-                        span.calculator__tab-text Цветные бриллианты
-
-                .calculator__main
-                    .calculator__main-head
-                        .calculator__main-name
-                            img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты").calculator__main-name-img
-                            h4.calculator__main-name-text Цветные бриллианты 2
+                .calculator__main-wrap
+                    .calculator__main
+                        .calculator__main-head
+                            .calculator__radio-diamond-wrap.calculator__radio-diamond-wrap_few-item
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name2" checked)#radio-diamond12.calculator__radio-diamond-input
+                                    label(for="radio-diamond12").calculator__radio-diamond-label С бриллиантами
+                                        img(src="./assets/images/calculator-rect-min.png", srcset="assets/images/calculator-rect@2x-min.png 2x" alt="С бриллиантами").calculator__radio-diamond-img
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name2")#radio-diamond22.calculator__radio-diamond-input
+                                    label(for="radio-diamond22").calculator__radio-diamond-label С цветными камнями
+                                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="С цветными камнями").calculator__radio-diamond-img
                         
-                        .input_select.calculator__main-head-input
-                            select(placeholder="Название камня").input
-                                option(value="1") Название камня 1
-                                option(value="2") Название камня 2
-                                option(value="3") Название камня 3
-                    
-                    .calculator__main-body
-                        .calculator__tuning-wrap
+                        .calculator__main-body
+                            span.calculator__main-body-name Основной камень
                             .calculator__tuning-item
                                 .calculator__tuning-karat
                                     span.calculator__tuning-karat-name Масса, кар.
-                                    input(type="text" value="0.8").calculator__tuning-karat-number
+                                    span.calculator__tuning-karat-number 0.8
                                 .calculator__tuning-input-wrap
-                                    input(type="range" min="0.05" max="15" step="0.01" value="0.8").calculator__tuning-input
-                                    .calculator__tuning-input-max-min
-                                        span 0.05
-                                        spna +15
-                        
-                            .calculator__tuning-item
-                                .calculator__tuning-karat
-                                    span.calculator__tuning-karat-name Масса, кар.
-                                    input(type="text" value="0.8").calculator__tuning-karat-number
-                                .calculator__tuning-input-wrap
-                                    input(type="range" min="0.05" max="15" step="0.01" value="0.8").calculator__tuning-input
+                                    input(type="range" min="1" max="15" step="1" value="4").calculator__tuning-input
                                     .calculator__tuning-input-max-min
                                         span 0.05
                                         spna +15
                             
-                        .calculator__price-wrap
+                            .calculator__tuning-item
+                                .calculator__tuning-karat
+                                    span.calculator__tuning-karat-name Количество, шт.
+                                    span.calculator__tuning-karat-number 102
+                                .calculator__tuning-input-wrap
+                                    input(type="range" min="1" max="200" step="1" value="102").calculator__tuning-input
+                                    .calculator__tuning-input-max-min
+                                        span 1
+                                        spna 200
+                        
+                            .calculator__radio-wrap
+                                .calculator__radio-label
+                                    input(type="radio", name="calculator1")#rb11.calculator__radio
+                                    label(for="rb11").calculator__radio-text Экспертное заключение или сертификат соответствия
+                                .calculator__radio-label
+                                    input(type="radio", name="calculator1" checked)#rb21.calculator__radio
+                                    label(for="rb21").calculator__radio-text Экспресс-диагностика
+                                        span.calculator__radio-text-b Без выдачи экспертного заключения
+
+                    .calculator__main
+                        .calculator__main-head
+                            .calculator__radio-diamond-wrap
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name2" checked)#radio-diamond12.calculator__radio-diamond-input
+                                    label(for="radio-diamond12").calculator__radio-diamond-label С бриллиантами
+                                        img(src="./assets/images/calculator-rect-min.png", srcset="assets/images/calculator-rect@2x-min.png 2x" alt="С бриллиантами").calculator__radio-diamond-img
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name2")#radio-diamond22.calculator__radio-diamond-input
+                                    label(for="radio-diamond22").calculator__radio-diamond-label С цветными камнями
+                                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="С цветными камнями").calculator__radio-diamond-img
+                        
+                        .calculator__main-body
+                            span.calculator__main-body-name Основной камень
+                            .calculator__tuning-item
+                                .calculator__tuning-karat
+                                    span.calculator__tuning-karat-name Масса, кар.
+                                    span.calculator__tuning-karat-number 0.8
+                                .calculator__tuning-input-wrap
+                                    input(type="range" min="1" max="15" step="1" value="4").calculator__tuning-input
+                                    .calculator__tuning-input-max-min
+                                        span 0.05
+                                        spna +15
+                            
+                            .calculator__tuning-item
+                                .calculator__tuning-karat
+                                    span.calculator__tuning-karat-name Количество, шт.
+                                    span.calculator__tuning-karat-number 102
+                                .calculator__tuning-input-wrap
+                                    input(type="range" min="1" max="200" step="1" value="102").calculator__tuning-input
+                                    .calculator__tuning-input-max-min
+                                        span 1
+                                        spna 200
+                        
+                            .calculator__radio-wrap
+                                .calculator__radio-label
+                                    input(type="radio", name="calculator11")#rb111.calculator__radio
+                                    label(for="rb111").calculator__radio-text Экспертное заключение или сертификат соответствия
+                                .calculator__radio-label
+                                    input(type="radio", name="calculator11" checked)#rb211.calculator__radio
+                                    label(for="rb211").calculator__radio-text Экспресс-диагностика
+                                        span.calculator__radio-text-b Без выдачи экспертного заключения
+
+
+                .calculator__price-wrap
                             .calculator__price-text-wrap
                                 span.calculator__price-text Общая стоимость
                                 .calculator__price-number-wrap
-                                    span.calculator__price-number 1 700 
+                                    span.calculator__price-number.color_green_blend 1 600 
                                         spna.calculator__price-rub руб.
+                                    span.calculator__price-old 1 700 
+                                        span.calculator__price-old-rub руб.
                             
                             .calculator__price-button-wrap
                                 button.button.calculator__price-button.popup-open Заказать сертификат
                                 a(href="#").calculator__price-linc Пример
-            
+                button.calculator__buttom-add-gem + добавить ещё камень
+
             .calculator__body#tab-calc-3
-                .calculator__tab-wrap
-                    botton.calculator__tab-item
-                        img(src="./assets/images/calculator-rect-min.png", srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Бесцветные бриллианты").calculator__tab-img
-                        span.calculator__tab-text Бесцветные бриллианты
-                    botton.calculator__tab-item.calculator__tab-activ
-                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты").calculator__tab-img
-                        span.calculator__tab-text Цветные бриллианты
-    
-                .calculator__main
-                    .calculator__main-head
-                        .calculator__main-name
-                            img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты").calculator__main-name-img
-                            h4.calculator__main-name-text Цветные бриллианты 3
+                .calculator__main-wrap
+                    .calculator__main
+                        .calculator__main-head
+                            .calculator__radio-diamond-wrap
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name3" checked)#radio-diamond1.calculator__radio-diamond-input
+                                    label(for="radio-diamond1").calculator__radio-diamond-label Александрит
+                                        img(src="./assets/images/calculator-rect-min.png", srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Александрит").calculator__radio-diamond-img
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name3")#radio-diamond2.calculator__radio-diamond-input
+                                    label(for="radio-diamond2").calculator__radio-diamond-label Изумруд
+                                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Изумруд").calculator__radio-diamond-img
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name3")#radio-diamond3.calculator__radio-diamond-input
+                                    label(for="radio-diamond3").calculator__radio-diamond-label Рубин
+                                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Рубин").calculator__radio-diamond-img
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name3")#radio-diamond4.calculator__radio-diamond-input
+                                    label(for="radio-diamond4").calculator__radio-diamond-label Сапфир
+                                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Сапфир").calculator__radio-diamond-img
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name3")#radio-diamond5.calculator__radio-diamond-input
+                                    label(for="radio-diamond5").calculator__radio-diamond-label Танзанит
+                                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Танзанит").calculator__radio-diamond-img
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name3")#radio-diamond6.calculator__radio-diamond-input
+                                    label(for="radio-diamond6").calculator__radio-diamond-label Шпинель
+                                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Шпинель").calculator__radio-diamond-img
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name3")#radio-diamond7.calculator__radio-diamond-input
+                                    label(for="radio-diamond7").calculator__radio-diamond-label Благородный опал
+                                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Благородный опал").calculator__radio-diamond-img
+                                .calculator__radio-diamond
+                                    input(type="radio", name="radio-name3")#radio-diamond8.calculator__radio-diamond-input
+                                    label(for="radio-diamond8").calculator__radio-diamond-label Cu-Турмалин
+                                        img(src="./assets/images/calculator-color-min.png", srcset="assets/images/calculator-color@2x-min.png 2x" alt="Cu-Турмалин").calculator__radio-diamond-img
                         
-                        .input_select.calculator__main-head-input
-                            select(placeholder="Название камня").input
-                                option(value="1") Название камня 1
-                                option(value="2") Название камня 2
-                                option(value="3") Название камня 3
-                    
-                    .calculator__main-body
-                        .calculator__tuning-wrap
+                        .calculator__main-body
+                            span.calculator__main-body-name Основной камень
                             .calculator__tuning-item
                                 .calculator__tuning-karat
                                     span.calculator__tuning-karat-name Масса, кар.
-                                    input(type="text" value="0.8").calculator__tuning-karat-number
+                                    span.calculator__tuning-karat-number 0.8
                                 .calculator__tuning-input-wrap
-                                    input(type="range" min="0.05" max="15" step="0.01" value="0.8").calculator__tuning-input
+                                    input(type="range" min="1" max="15" step="1" value="4").calculator__tuning-input
                                     .calculator__tuning-input-max-min
                                         span 0.05
                                         spna +15
                         
                             .calculator__radio-wrap
                                 .calculator__radio-label
-                                    input(type="radio", name="calculator3")#rb13.calculator__radio
-                                    label(for="rb13").calculator__radio-text Экспертное заключение
+                                    input(type="radio", name="calculator3")#rb12.calculator__radio
+                                    label(for="rb12").calculator__radio-text Экспертное заключение или сертификат соответствия
                                 .calculator__radio-label
-                                    input(type="radio", name="calculator3" checked)#rb23.calculator__radio
-                                    label(for="rb23").calculator__radio-text Экспресс-диагностика
+                                    input(type="radio", name="calculator3" checked)#rb22.calculator__radio
+                                    label(for="rb22").calculator__radio-text Экспресс-диагностика
                                         span.calculator__radio-text-b Без выдачи экспертного заключения
 
-                        .calculator__price-wrap
+                .calculator__price-wrap
                             .calculator__price-text-wrap
                                 span.calculator__price-text Общая стоимость
                                 .calculator__price-number-wrap
@@ -194,3 +255,9 @@ block content
                     img(src="./assets/images/packaging-1-min.png", srcset="assets/images/packaging-1@2x-min.png 2x" alt="Индивидуальная упаковка").packaging__content-img
 
     include ../components/certificate-popup.pug
+
+//- .input_select.calculator__main-head-input
+    select(placeholder="Название камня").input
+        option(value="1") Название камня 1
+        option(value="2") Название камня 2
+        option(value="3") Название камня 3
