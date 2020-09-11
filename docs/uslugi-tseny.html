@@ -63,7 +63,7 @@
       <h1 class="heading-1 heading-under-bread-crumbs">Услуги и цены</h1>
       <div class="calculator">
         <div class="calculator__head">
-          <h2 class="heading-2 calculator__head-heading">Сертификация</h2>
+          <h2 class="heading-2 calculator__head-heading">Сертификация и экспертное заключение</h2>
           <div class="calculator__head-booton-wrap">
             <button class="button calculator__head-booton" value="tab-calc-1">Бриллианты</button>
             <button class="button button_hgost-neutral calculator__head-booton" value="tab-calc-2">Ювелирные изделия</button>
@@ -71,31 +71,25 @@
           </div>
         </div>
         <div class="calculator__body tab-container-active" id="tab-calc-1">
-          <div class="calculator__tab-wrap">
-            <botton class="calculator__tab-item"><img class="calculator__tab-img" src="./assets/images/calculator-rect-min.png" srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Бесцветные бриллианты"><span class="calculator__tab-text">Бесцветные бриллианты</span></botton>
-            <botton class="calculator__tab-item calculator__tab-activ"><img class="calculator__tab-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты"><span class="calculator__tab-text">Цветные бриллианты</span></botton>
-          </div>
-          <div class="calculator__main">
-            <div class="calculator__main-head">
-              <div class="calculator__main-name"><img class="calculator__main-name-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты">
-                <h4 class="calculator__main-name-text">Цветные бриллианты</h4>
-              </div>
-              <div class="input_select calculator__main-head-input">
-                <select class="input" placeholder="Название камня">
-                  <option value="1">Название камня 1</option>
-                  <option value="2">Название камня 2</option>
-                  <option value="3">Название камня 3</option>
-                </select>
-              </div>
-            </div>
-            <div class="calculator__main-body">
-              <div class="calculator__tuning-wrap">
-                <div class="calculator__tuning-item">
-                  <div class="calculator__tuning-karat"><span class="calculator__tuning-karat-name">Масса, кар.</span>
-                    <input class="calculator__tuning-karat-number" type="text" value="0.8">
+          <div class="calculator__main-wrap">
+            <div class="calculator__main">
+              <div class="calculator__main-head">
+                <div class="calculator__radio-diamond-wrap calculator__radio-diamond-wrap_few-item">
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name1" checked id="radio-diamond10">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond10">Бесцветные бриллианты<img class="calculator__radio-diamond-img" src="./assets/images/calculator-rect-min.png" srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Бесцветные бриллианты"></label>
                   </div>
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name1" id="radio-diamond20">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond20">Цветные бриллианты<img class="calculator__radio-diamond-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator__main-body"><span class="calculator__main-body-name">Основной камень</span>
+                <div class="calculator__tuning-item">
+                  <div class="calculator__tuning-karat"><span class="calculator__tuning-karat-name">Масса, кар.</span><span class="calculator__tuning-karat-number">0.8</span></div>
                   <div class="calculator__tuning-input-wrap">
-                    <input class="calculator__tuning-input" type="range" min="0.05" max="15" step="0.01" value="0.8">
+                    <input class="calculator__tuning-input" type="range" min="1" max="15" step="1" value="4">
                     <div class="calculator__tuning-input-max-min"><span>0.05</span>
                       <spna>+15</spna>
                     </div>
@@ -104,7 +98,7 @@
                 <div class="calculator__radio-wrap">
                   <div class="calculator__radio-label">
                     <input class="calculator__radio" type="radio" name="calculator1" id="rb11">
-                    <label class="calculator__radio-text" for="rb11">Экспертное заключение</label>
+                    <label class="calculator__radio-text" for="rb11">Экспертное заключение или сертификат соответствия</label>
                   </div>
                   <div class="calculator__radio-label">
                     <input class="calculator__radio" type="radio" name="calculator1" checked id="rb21">
@@ -112,99 +106,164 @@
                   </div>
                 </div>
               </div>
-              <div class="calculator__price-wrap">
-                <div class="calculator__price-text-wrap"><span class="calculator__price-text">Общая стоимость</span>
-                  <div class="calculator__price-number-wrap"><span class="calculator__price-number">1 700 
-                      <spna class="calculator__price-rub">руб.</spna></span></div>
-                </div>
-                <div class="calculator__price-button-wrap">
-                  <button class="button calculator__price-button popup-open">Заказать сертификат</button><a class="calculator__price-linc" href="#">Пример</a>
-                </div>
-              </div>
+            </div>
+          </div>
+          <div class="calculator__price-wrap">
+            <div class="calculator__price-text-wrap"><span class="calculator__price-text">Общая стоимость</span>
+              <div class="calculator__price-number-wrap"><span class="calculator__price-number color_green_blend">1 600 
+                  <spna class="calculator__price-rub">руб.</spna></span><span class="calculator__price-old">1 700 <span class="calculator__price-old-rub">руб.</span></span></div>
+            </div>
+            <div class="calculator__price-button-wrap">
+              <button class="button calculator__price-button popup-open">Заказать сертификат</button><a class="calculator__price-linc" href="#">Пример</a>
             </div>
           </div>
         </div>
         <div class="calculator__body" id="tab-calc-2">
-          <div class="calculator__tab-wrap">
-            <botton class="calculator__tab-item"><img class="calculator__tab-img" src="./assets/images/calculator-rect-min.png" srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Бесцветные бриллианты"><span class="calculator__tab-text">Бесцветные бриллианты</span></botton>
-            <botton class="calculator__tab-item calculator__tab-activ"><img class="calculator__tab-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты"><span class="calculator__tab-text">Цветные бриллианты</span></botton>
-          </div>
-          <div class="calculator__main">
-            <div class="calculator__main-head">
-              <div class="calculator__main-name"><img class="calculator__main-name-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты">
-                <h4 class="calculator__main-name-text">Цветные бриллианты 2</h4>
-              </div>
-              <div class="input_select calculator__main-head-input">
-                <select class="input" placeholder="Название камня">
-                  <option value="1">Название камня 1</option>
-                  <option value="2">Название камня 2</option>
-                  <option value="3">Название камня 3</option>
-                </select>
-              </div>
-            </div>
-            <div class="calculator__main-body">
-              <div class="calculator__tuning-wrap">
-                <div class="calculator__tuning-item">
-                  <div class="calculator__tuning-karat"><span class="calculator__tuning-karat-name">Масса, кар.</span>
-                    <input class="calculator__tuning-karat-number" type="text" value="0.8">
+          <div class="calculator__main-wrap">
+            <div class="calculator__main">
+              <div class="calculator__main-head">
+                <div class="calculator__radio-diamond-wrap calculator__radio-diamond-wrap_few-item">
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name2" checked id="radio-diamond12">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond12">С бриллиантами<img class="calculator__radio-diamond-img" src="./assets/images/calculator-rect-min.png" srcset="assets/images/calculator-rect@2x-min.png 2x" alt="С бриллиантами"></label>
                   </div>
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name2" id="radio-diamond22">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond22">С цветными камнями<img class="calculator__radio-diamond-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="С цветными камнями"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator__main-body"><span class="calculator__main-body-name">Основной камень</span>
+                <div class="calculator__tuning-item">
+                  <div class="calculator__tuning-karat"><span class="calculator__tuning-karat-name">Масса, кар.</span><span class="calculator__tuning-karat-number">0.8</span></div>
                   <div class="calculator__tuning-input-wrap">
-                    <input class="calculator__tuning-input" type="range" min="0.05" max="15" step="0.01" value="0.8">
+                    <input class="calculator__tuning-input" type="range" min="1" max="15" step="1" value="4">
                     <div class="calculator__tuning-input-max-min"><span>0.05</span>
                       <spna>+15</spna>
                     </div>
                   </div>
                 </div>
                 <div class="calculator__tuning-item">
-                  <div class="calculator__tuning-karat"><span class="calculator__tuning-karat-name">Масса, кар.</span>
-                    <input class="calculator__tuning-karat-number" type="text" value="0.8">
-                  </div>
+                  <div class="calculator__tuning-karat"><span class="calculator__tuning-karat-name">Количество, шт.</span><span class="calculator__tuning-karat-number">102</span></div>
                   <div class="calculator__tuning-input-wrap">
-                    <input class="calculator__tuning-input" type="range" min="0.05" max="15" step="0.01" value="0.8">
+                    <input class="calculator__tuning-input" type="range" min="1" max="200" step="1" value="102">
+                    <div class="calculator__tuning-input-max-min"><span>1</span>
+                      <spna>200</spna>
+                    </div>
+                  </div>
+                </div>
+                <div class="calculator__radio-wrap">
+                  <div class="calculator__radio-label">
+                    <input class="calculator__radio" type="radio" name="calculator1" id="rb11">
+                    <label class="calculator__radio-text" for="rb11">Экспертное заключение или сертификат соответствия</label>
+                  </div>
+                  <div class="calculator__radio-label">
+                    <input class="calculator__radio" type="radio" name="calculator1" checked id="rb21">
+                    <label class="calculator__radio-text" for="rb21">Экспресс-диагностика<span class="calculator__radio-text-b">Без выдачи экспертного заключения</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator__main">
+              <div class="calculator__main-head">
+                <div class="calculator__radio-diamond-wrap">
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name2" checked id="radio-diamond12">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond12">С бриллиантами<img class="calculator__radio-diamond-img" src="./assets/images/calculator-rect-min.png" srcset="assets/images/calculator-rect@2x-min.png 2x" alt="С бриллиантами"></label>
+                  </div>
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name2" id="radio-diamond22">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond22">С цветными камнями<img class="calculator__radio-diamond-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="С цветными камнями"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator__main-body"><span class="calculator__main-body-name">Основной камень</span>
+                <div class="calculator__tuning-item">
+                  <div class="calculator__tuning-karat"><span class="calculator__tuning-karat-name">Масса, кар.</span><span class="calculator__tuning-karat-number">0.8</span></div>
+                  <div class="calculator__tuning-input-wrap">
+                    <input class="calculator__tuning-input" type="range" min="1" max="15" step="1" value="4">
                     <div class="calculator__tuning-input-max-min"><span>0.05</span>
                       <spna>+15</spna>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="calculator__price-wrap">
-                <div class="calculator__price-text-wrap"><span class="calculator__price-text">Общая стоимость</span>
-                  <div class="calculator__price-number-wrap"><span class="calculator__price-number">1 700 
-                      <spna class="calculator__price-rub">руб.</spna></span></div>
+                <div class="calculator__tuning-item">
+                  <div class="calculator__tuning-karat"><span class="calculator__tuning-karat-name">Количество, шт.</span><span class="calculator__tuning-karat-number">102</span></div>
+                  <div class="calculator__tuning-input-wrap">
+                    <input class="calculator__tuning-input" type="range" min="1" max="200" step="1" value="102">
+                    <div class="calculator__tuning-input-max-min"><span>1</span>
+                      <spna>200</spna>
+                    </div>
+                  </div>
                 </div>
-                <div class="calculator__price-button-wrap">
-                  <button class="button calculator__price-button popup-open">Заказать сертификат</button><a class="calculator__price-linc" href="#">Пример</a>
+                <div class="calculator__radio-wrap">
+                  <div class="calculator__radio-label">
+                    <input class="calculator__radio" type="radio" name="calculator11" id="rb111">
+                    <label class="calculator__radio-text" for="rb111">Экспертное заключение или сертификат соответствия</label>
+                  </div>
+                  <div class="calculator__radio-label">
+                    <input class="calculator__radio" type="radio" name="calculator11" checked id="rb211">
+                    <label class="calculator__radio-text" for="rb211">Экспресс-диагностика<span class="calculator__radio-text-b">Без выдачи экспертного заключения</span></label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="calculator__price-wrap">
+            <div class="calculator__price-text-wrap"><span class="calculator__price-text">Общая стоимость</span>
+              <div class="calculator__price-number-wrap"><span class="calculator__price-number color_green_blend">1 600 
+                  <spna class="calculator__price-rub">руб.</spna></span><span class="calculator__price-old">1 700 <span class="calculator__price-old-rub">руб.</span></span></div>
+            </div>
+            <div class="calculator__price-button-wrap">
+              <button class="button calculator__price-button popup-open">Заказать сертификат</button><a class="calculator__price-linc" href="#">Пример</a>
+            </div>
+          </div>
+          <button class="calculator__buttom-add-gem">+ добавить ещё камень</button>
         </div>
         <div class="calculator__body" id="tab-calc-3">
-          <div class="calculator__tab-wrap">
-            <botton class="calculator__tab-item"><img class="calculator__tab-img" src="./assets/images/calculator-rect-min.png" srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Бесцветные бриллианты"><span class="calculator__tab-text">Бесцветные бриллианты</span></botton>
-            <botton class="calculator__tab-item calculator__tab-activ"><img class="calculator__tab-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты"><span class="calculator__tab-text">Цветные бриллианты</span></botton>
-          </div>
-          <div class="calculator__main">
-            <div class="calculator__main-head">
-              <div class="calculator__main-name"><img class="calculator__main-name-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Цветные бриллианты">
-                <h4 class="calculator__main-name-text">Цветные бриллианты 3</h4>
-              </div>
-              <div class="input_select calculator__main-head-input">
-                <select class="input" placeholder="Название камня">
-                  <option value="1">Название камня 1</option>
-                  <option value="2">Название камня 2</option>
-                  <option value="3">Название камня 3</option>
-                </select>
-              </div>
-            </div>
-            <div class="calculator__main-body">
-              <div class="calculator__tuning-wrap">
-                <div class="calculator__tuning-item">
-                  <div class="calculator__tuning-karat"><span class="calculator__tuning-karat-name">Масса, кар.</span>
-                    <input class="calculator__tuning-karat-number" type="text" value="0.8">
+          <div class="calculator__main-wrap">
+            <div class="calculator__main">
+              <div class="calculator__main-head">
+                <div class="calculator__radio-diamond-wrap">
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name3" checked id="radio-diamond1">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond1">Александрит<img class="calculator__radio-diamond-img" src="./assets/images/calculator-rect-min.png" srcset="assets/images/calculator-rect@2x-min.png 2x" alt="Александрит"></label>
                   </div>
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name3" id="radio-diamond2">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond2">Изумруд<img class="calculator__radio-diamond-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Изумруд"></label>
+                  </div>
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name3" id="radio-diamond3">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond3">Рубин<img class="calculator__radio-diamond-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Рубин"></label>
+                  </div>
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name3" id="radio-diamond4">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond4">Сапфир<img class="calculator__radio-diamond-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Сапфир"></label>
+                  </div>
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name3" id="radio-diamond5">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond5">Танзанит<img class="calculator__radio-diamond-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Танзанит"></label>
+                  </div>
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name3" id="radio-diamond6">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond6">Шпинель<img class="calculator__radio-diamond-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Шпинель"></label>
+                  </div>
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name3" id="radio-diamond7">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond7">Благородный опал<img class="calculator__radio-diamond-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Благородный опал"></label>
+                  </div>
+                  <div class="calculator__radio-diamond">
+                    <input class="calculator__radio-diamond-input" type="radio" name="radio-name3" id="radio-diamond8">
+                    <label class="calculator__radio-diamond-label" for="radio-diamond8">Cu-Турмалин<img class="calculator__radio-diamond-img" src="./assets/images/calculator-color-min.png" srcset="assets/images/calculator-color@2x-min.png 2x" alt="Cu-Турмалин"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator__main-body"><span class="calculator__main-body-name">Основной камень</span>
+                <div class="calculator__tuning-item">
+                  <div class="calculator__tuning-karat"><span class="calculator__tuning-karat-name">Масса, кар.</span><span class="calculator__tuning-karat-number">0.8</span></div>
                   <div class="calculator__tuning-input-wrap">
-                    <input class="calculator__tuning-input" type="range" min="0.05" max="15" step="0.01" value="0.8">
+                    <input class="calculator__tuning-input" type="range" min="1" max="15" step="1" value="4">
                     <div class="calculator__tuning-input-max-min"><span>0.05</span>
                       <spna>+15</spna>
                     </div>
@@ -212,24 +271,24 @@
                 </div>
                 <div class="calculator__radio-wrap">
                   <div class="calculator__radio-label">
-                    <input class="calculator__radio" type="radio" name="calculator3" id="rb13">
-                    <label class="calculator__radio-text" for="rb13">Экспертное заключение</label>
+                    <input class="calculator__radio" type="radio" name="calculator3" id="rb12">
+                    <label class="calculator__radio-text" for="rb12">Экспертное заключение или сертификат соответствия</label>
                   </div>
                   <div class="calculator__radio-label">
-                    <input class="calculator__radio" type="radio" name="calculator3" checked id="rb23">
-                    <label class="calculator__radio-text" for="rb23">Экспресс-диагностика<span class="calculator__radio-text-b">Без выдачи экспертного заключения</span></label>
+                    <input class="calculator__radio" type="radio" name="calculator3" checked id="rb22">
+                    <label class="calculator__radio-text" for="rb22">Экспресс-диагностика<span class="calculator__radio-text-b">Без выдачи экспертного заключения</span></label>
                   </div>
                 </div>
               </div>
-              <div class="calculator__price-wrap">
-                <div class="calculator__price-text-wrap"><span class="calculator__price-text">Общая стоимость</span>
-                  <div class="calculator__price-number-wrap"><span class="calculator__price-number color_green_blend">1 600 
-                      <spna class="calculator__price-rub">руб.</spna></span><span class="calculator__price-old">1 700 <span class="calculator__price-old-rub">руб.</span></span></div>
-                </div>
-                <div class="calculator__price-button-wrap">
-                  <button class="button calculator__price-button popup-open">Заказать сертификат</button><a class="calculator__price-linc" href="#">Пример</a>
-                </div>
-              </div>
+            </div>
+          </div>
+          <div class="calculator__price-wrap">
+            <div class="calculator__price-text-wrap"><span class="calculator__price-text">Общая стоимость</span>
+              <div class="calculator__price-number-wrap"><span class="calculator__price-number color_green_blend">1 600 
+                  <spna class="calculator__price-rub">руб.</spna></span><span class="calculator__price-old">1 700 <span class="calculator__price-old-rub">руб.</span></span></div>
+            </div>
+            <div class="calculator__price-button-wrap">
+              <button class="button calculator__price-button popup-open">Заказать сертификат</button><a class="calculator__price-linc" href="#">Пример</a>
             </div>
           </div>
         </div>
