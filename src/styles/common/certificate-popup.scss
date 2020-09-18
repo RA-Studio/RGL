@@ -1,5 +1,5 @@
 .certificate-popup {
-    display: none;
+    display: block;
 }
 
 .certificate-popup__fade::before {
@@ -16,7 +16,8 @@
 .certificate-popup__wrap {
     position: fixed;
     width: 772px;
-    height: 576px;
+    height: max-content;
+    max-height: 90%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -40,7 +41,6 @@
     }
 
     .contact__heading {
-        white-space: nowrap;
         letter-spacing: -0.02em;
     }
 
